@@ -1,0 +1,21 @@
+.footer
+    padding: 5rem 0
+    background-color: $footerblack
+    &__social
+        li
+            list-style: none
+            display: inline-block
+            &:not(:last-child)
+                margin-right: 1.5rem
+            a
+                font-size: 2rem
+                color: $equalgrey   
+                +transition(.2s)
+                &:hover
+                    color:   $socialgreen       
+    &__copyright
+        h6
+            font-size: 1.3rem
+            color: $equalwhite
+            font-family: $fpoppins
+            font-weight: 300
