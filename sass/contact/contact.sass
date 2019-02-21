@@ -1,0 +1,109 @@
+.contact
+    padding: 6rem 0
+    &__form
+        padding: 0 2rem 0 
+        &--title
+            margin-bottom: 3rem
+            h2
+                font-family: $fasap
+                font-weight: 500
+                line-height: 1.1
+                font-size: 3rem
+                color: $gray
+        &--fullname
+            +inputGraper
+            input[type="text"]
+                +inputStyles
+        &--email
+            +inputGraper
+            input[type="email"]
+                +inputStyles
+        &--numbers
+            +inputGraper
+            input[type="number"]
+                +inputStyles
+        &--message
+            width: 100%
+            height: 19rem 
+            max-height: 19rem
+            margin-bottom: 2rem
+            textarea
+                resize: none
+                +inputStyles
+        &--button
+            input[type="submit"]
+                color: $white
+                background-color: $othergreen
+                font-family: $fasap
+                border-radius: 2rem
+                font-size: 1.6rem
+                padding: 1.3rem 3rem
+                border: none
+                +transition(.3s)
+                cursor: pointer
+                &:hover
+                    background-color: #225031 
+    &__description
+        padding: 0 0 0 2rem
+        &--title
+            margin-bottom: 2rem
+            h2
+                font-family: $fasap
+                font-size: 3rem
+                color: $gray
+                font-weight: 500    
+        &--text
+            margin-bottom: 4rem
+            p
+                font-size: 1.4rem
+                color: $gray
+                line-height: 2.5rem
+                font-family: $fpoppins 
+                // this is onli for the finances styles(call a little trick) 
+                &:nth-child(2)
+                    padding: 2rem 0
+        &--contactus
+            margin-bottom: 4rem
+            &_title
+                margin-bottom: 2rem
+                h4
+                    font-family: $fasap
+                    font-weight: 500
+                    font-size: 1.8rem
+                    line-height: 1.1
+                    color: $gray
+            ul
+                li
+                    list-style: none
+                    font-size: 1.4rem
+                    color: $gray
+                    line-height: 2.5rem
+                    font-family: $fpoppins
+                    font-weight: 600
+                    margin-bottom: 1rem
+                    i
+                        color: #004f4f
+                        margin-right: .50rem
+                    span
+                        font-weight: 400
+                    a
+                        text-decoration: none
+                        color: #004f4f
+                        font-weight: 600
+        &--social
+            ul
+                li
+                    list-style: none
+                    display: inline-flex
+                    justify-content: center
+                    align-items: center
+                    background-color: $lightgreen
+                    width: 3.5rem
+                    height: 3.5rem
+                    border-radius: 50%
+                    &:not(:last-child)
+                        margin-right: .5rem
+                    a
+                        text-decoration: none
+                        color: $white
+                        font-size: 1.6rem
