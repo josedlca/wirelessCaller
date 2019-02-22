@@ -10,6 +10,34 @@ html {
   font-size: 62.5%;
 }
 
+@font-face {
+  font-family: "Poppins Regular";
+  src: url("fonts/Poppins/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: "Poppins Medium";
+  src: url("fonts/Poppins/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: "Poppins Light";
+  src: url("fonts/Poppins/Poppins-Light.ttf");
+}
+@font-face {
+  font-family: "Poppins SemiBold";
+  src: url("fonts/Poppins/Poppins-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Asap Medium";
+  src: url("fonts/Asap/Asap-Medium.ttf");
+}
+@font-face {
+  font-family: "Asap Regular";
+  src: url("fonts/Asap/Asap-Regular.ttf");
+}
+@font-face {
+  font-family: "Asap SemiBold";
+  src: url("fonts/Asap/Asap-SemiBold.ttf");
+}
 /*===============================================*/
  *
  *                  /*FONTS*/
@@ -60,7 +88,7 @@ html {
 }
 .header__nav li a {
   text-decoration: none;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins SemiBold", sans-serif;
   font-weight: 600;
   font-size: 1.6rem;
   color: #707271;
@@ -122,7 +150,7 @@ html {
 .footer__copyright h6 {
   font-size: 1.3rem;
   color: #DADADA;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins Regular", sans-serif;
   font-weight: 300;
   display: inline-block;
 }
@@ -140,13 +168,13 @@ html {
 }
 .howwork__description--title h2 {
   font-size: 3.6rem;
-  font-family: "Asap", sans-serif;
+  font-family: "Asap Regular", sans-serif;
   font-weight: 400;
   color: #616161;
 }
 .howwork__description--text {
   font-size: 1.4rem;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins Regular", sans-serif;
   color: #616161;
   margin-bottom: 3.5rem;
   line-height: 2.5rem;
@@ -155,7 +183,7 @@ html {
 .howwork__description--text h1 {
   font-size: 1.4rem;
   color: #70c053;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins SemiBold", sans-serif;
   display: inline-block;
 }
 .howwork__img img {
@@ -203,7 +231,7 @@ html {
 }
 .benefits__card--text h4 {
   font-size: 1.8rem;
-  font-family: "Asap", sans-serif;
+  font-family: "Asap Regular", sans-serif;
   font-weight: 400;
   color: #616161;
   line-height: 1.2;
@@ -253,7 +281,7 @@ html {
 .greenbar__title h1 span {
   font-size: 3.3rem;
   color: #ffffff;
-  font-family: "Asap", sans-serif;
+  font-family: "Asap Regular", sans-serif;
   font-weight: 200;
   line-height: 1.1;
 }
@@ -262,7 +290,7 @@ html {
 }
 .greenbar__return a {
   font-size: 1.4rem;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins Regular", sans-serif;
   color: #ffffff;
   text-decoration: none;
   display: inline-block;
@@ -275,7 +303,7 @@ html {
 }
 .greenbar__return h6 {
   font-size: 1.4rem;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins Regular", sans-serif;
   color: #ffffff;
   font-weight: 400;
   display: inline-block;
@@ -298,7 +326,7 @@ html {
 .foricons__cards a p {
   color: #444444;
   font-size: 1.8rem;
-  font-family: "Asap", sans-serif;
+  font-family: "Asap Medium", sans-serif;
   font-weight: 500;
   margin-bottom: 4rem;
   -webkit-transition: ease all 0.2s;
@@ -328,7 +356,7 @@ html {
   font-size: 1.6rem;
   color: #ffffff;
   line-height: 3.5rem;
-  font-family: "Asap", sans-serif;
+  font-family: "Asap Regular", sans-serif;
 }
 .store__categories ul li {
   width: 100%;
@@ -342,7 +370,7 @@ html {
   font-weight: 500;
   display: inline-flex;
   align-items: center;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins Medium", sans-serif;
   -webkit-transition: ease all 0.3s;
   -moz-transition: ease all 0.3s;
   -ms-transition: ease all 0.3s;
@@ -379,7 +407,7 @@ html {
   font-size: 1.6rem;
   color: #ffffff;
   line-height: 3.5rem;
-  font-family: "Asap", sans-serif;
+  font-family: "Asap Regular", sans-serif;
 }
 .store__hotstock--title p span {
   color: #b5d359;
@@ -416,15 +444,27 @@ html {
   flex-wrap: wrap;
   align-self: center;
 }
-.store__hotstock--item_description-namestars p {
+.store__hotstock--item_description-namestars a {
   font-size: 1.4rem;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins Medium", sans-serif;
   color: #444444;
+  text-decoration: none;
   margin-bottom: 1rem;
+  -webkit-transition: ease all 0.2s;
+  -moz-transition: ease all 0.2s;
+  -ms-transition: ease all 0.2s;
+  -o-transition: ease all 0.2s;
+  transition: ease all 0.2s;
+}
+.store__hotstock--item_description-namestars a:hover {
+  color: #b5d359;
 }
 .store__hotstock--item_description-namestars ul li {
   list-style: none;
   display: inline-block;
+}
+.store__hotstock--item_description:first-child:hover > .store__hotstock--item_description-img img {
+  border: 1px #b5d359 solid;
 }
 .store__hotstock--item_price {
   display: flex;
@@ -434,7 +474,7 @@ html {
 .store__hotstock--item_price p {
   font-size: 1.8rem;
   display: inline-block;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins SemiBold", sans-serif;
   color: #fa381d;
   font-weight: 600;
   line-height: 25px;
@@ -452,7 +492,7 @@ html {
 .store__show p {
   font-size: 1.3rem;
   color: #333;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins Regular", sans-serif;
   display: inline-block;
 }
 .store__show--select {
@@ -481,7 +521,7 @@ html {
   display: inline-block;
   border-right: 1px solid #d7d7d7;
   color: #444444;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins Regular", sans-serif;
 }
 .store__date i {
   padding: 0 1.3rem 0 1.5rem;
@@ -499,10 +539,38 @@ html {
   width: 100%;
   height: 100%;
   margin-bottom: 1.5rem;
+  position: relative;
 }
 .store__product--img img {
   width: 100%;
   height: 100%;
+}
+.store__product--img_1 {
+  backface-visibility: hidden;
+  transform: rotateY(0deg);
+  -webkit-transition: ease all 0.8s;
+  -moz-transition: ease all 0.8s;
+  -ms-transition: ease all 0.8s;
+  -o-transition: ease all 0.8s;
+  transition: ease all 0.8s;
+}
+.store__product--img_2 {
+  position: absolute;
+  backface-visibility: hidden;
+  top: 0;
+  left: 0;
+  transform: rotateY(180deg);
+  -webkit-transition: ease all 0.8s;
+  -moz-transition: ease all 0.8s;
+  -ms-transition: ease all 0.8s;
+  -o-transition: ease all 0.8s;
+  transition: ease all 0.8s;
+}
+.store__product--img:hover > .store__product--img_1 {
+  transform: rotateY(-180deg);
+}
+.store__product--img:hover > .store__product--img_2 {
+  transform: rotateY(0deg);
 }
 .store__product--title {
   margin-bottom: 1rem;
@@ -510,7 +578,7 @@ html {
 .store__product--title a {
   font-size: 1.4rem;
   color: #444;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins Medium", sans-serif;
   font-weight: 500;
   -webkit-transition: ease all 0.2s;
   -moz-transition: ease all 0.2s;
@@ -527,7 +595,7 @@ html {
 .store__product--price p {
   font-size: 1.8rem;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins SemiBold", sans-serif;
   line-height: 2.5rem;
   color: #fa381d;
 }
@@ -538,7 +606,7 @@ html {
   text-decoration: none;
   font-size: 1.4rem;
   color: #333;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins Regular", sans-serif;
   background: #ffffff;
   bottom: 0;
   left: 50%;
@@ -592,7 +660,7 @@ html {
   background: #1e773b;
   padding: 0 1.5rem;
   font-size: 1.6rem;
-  font-family: "Asap", sans-serif;
+  font-family: "Asap Regular", sans-serif;
   height: 100%;
   border-radius: 0 1rem 1rem 0;
   color: #ffffff;
@@ -617,7 +685,7 @@ html {
   margin-bottom: 1rem;
 }
 .blog__newenter--title h4 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins SemiBold", sans-serif;
   color: #ffffff;
   font-size: 1.6rem;
   font-weight: 600;
@@ -633,7 +701,7 @@ html {
 .blog__newenter ul li a {
   text-decoration: none;
   font-size: 1.4rem;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins Regular", sans-serif;
   color: #444;
   -webkit-transition: ease all 0.2s;
   -moz-transition: ease all 0.2s;
@@ -666,7 +734,7 @@ html {
 .blog__card--header_date p {
   font-size: 1.6rem;
   color: #222;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins SemiBold", sans-serif;
   font-weight: 600;
 }
 .blog__card--header_date p span {
@@ -689,25 +757,25 @@ html {
 .blog__card--description_title h4 a {
   text-decoration: none;
   font-size: 1.7rem;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins SemiBold", sans-serif;
   color: #222;
 }
 .blog__card--description_title h4 a:hover {
   color: #1e773b;
 }
 .blog__card--description_categoria {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins Regular", sans-serif;
   font-size: 1.1rem;
   line-height: 1.8rem;
   color: #444;
   margin-bottom: 1.5rem;
 }
 .blog__card--description_categoria span {
-  font-weight: 600;
+  font-family: "Poppins SemiBold", sans-serif;
 }
 .blog__card--description_categoria a {
   text-decoration: none;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins Regular", sans-serif;
   font-size: 1.1rem;
   line-height: 1.8rem;
   color: #444;
@@ -719,7 +787,7 @@ html {
   font-size: 1.4rem;
   color: #616161;
   line-height: 2.5rem;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins Regular", sans-serif;
   margin-bottom: 2.5rem;
 }
 .blog__card--description_seemore {
@@ -729,7 +797,7 @@ html {
   text-decoration: none;
   font-size: 1.3rem;
   color: #333;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins SemiBold", sans-serif;
   font-weight: 600;
   -webkit-transition: ease all 0.2s;
   -moz-transition: ease all 0.2s;
@@ -751,7 +819,7 @@ html {
   margin-bottom: 3rem;
 }
 .contact__form--title h2 {
-  font-family: "Asap", sans-serif;
+  font-family: "Asap Medium", sans-serif;
   font-weight: 500;
   line-height: 1.1;
   font-size: 3rem;
@@ -770,7 +838,7 @@ html {
   width: 100%;
   height: 100%;
   outline: none;
-  font-family: "Asap", sans-serif;
+  font-family: "Asap Regular", sans-serif;
   color: #616161;
 }
 .contact__form--email {
@@ -786,7 +854,7 @@ html {
   width: 100%;
   height: 100%;
   outline: none;
-  font-family: "Asap", sans-serif;
+  font-family: "Asap Regular", sans-serif;
   color: #616161;
 }
 .contact__form--numbers {
@@ -802,7 +870,7 @@ html {
   width: 100%;
   height: 100%;
   outline: none;
-  font-family: "Asap", sans-serif;
+  font-family: "Asap Regular", sans-serif;
   color: #616161;
 }
 .contact__form--message {
@@ -820,13 +888,13 @@ html {
   width: 100%;
   height: 100%;
   outline: none;
-  font-family: "Asap", sans-serif;
+  font-family: "Asap Regular", sans-serif;
   color: #616161;
 }
 .contact__form--button input[type=submit] {
   color: #ffffff;
   background-color: #1e773b;
-  font-family: "Asap", sans-serif;
+  font-family: "Asap Regular", sans-serif;
   border-radius: 2rem;
   font-size: 1.6rem;
   padding: 1.3rem 3rem;
@@ -848,7 +916,7 @@ html {
   margin-bottom: 2rem;
 }
 .contact__description--title h2 {
-  font-family: "Asap", sans-serif;
+  font-family: "Asap Medium", sans-serif;
   font-size: 3rem;
   color: #616161;
   font-weight: 500;
@@ -860,7 +928,7 @@ html {
   font-size: 1.4rem;
   color: #616161;
   line-height: 2.5rem;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins Regular", sans-serif;
 }
 .contact__description--text p:nth-child(2) {
   padding: 2rem 0;
@@ -872,7 +940,7 @@ html {
   margin-bottom: 2rem;
 }
 .contact__description--contactus_title h4 {
-  font-family: "Asap", sans-serif;
+  font-family: "Asap Regular", sans-serif;
   font-weight: 500;
   font-size: 1.8rem;
   line-height: 1.1;
@@ -883,7 +951,7 @@ html {
   font-size: 1.4rem;
   color: #616161;
   line-height: 2.5rem;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins SemiBold", sans-serif;
   font-weight: 600;
   margin-bottom: 1rem;
 }
@@ -892,12 +960,12 @@ html {
   margin-right: 0.5rem;
 }
 .contact__description--contactus ul li span {
-  font-weight: 400;
+  font-family: "Poppins Regular", sans-serif;
 }
 .contact__description--contactus ul li a {
   text-decoration: none;
   color: #004f4f;
-  font-weight: 600;
+  font-family: "Poppins SemiBold", sans-serif;
 }
 .contact__description--social ul li {
   list-style: none;
@@ -934,7 +1002,7 @@ html {
 }
 .ourservices__details--title h2 {
   font-size: 3.6rem;
-  font-family: "Asap", sans-serif;
+  font-family: "Asap Regular", sans-serif;
   font-weight: 400;
   color: #616161;
 }
@@ -945,10 +1013,51 @@ html {
   font-size: 1.4rem;
   color: #616161;
   line-height: 2.5rem;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins Regular", sans-serif;
 }
 .ourservices__details--text p span {
-  font-weight: bold;
+  font-family: "Poppins SemiBold", sans-serif;
+}
+
+.cardTemplate {
+  padding: 5rem 0 8rem 0;
+}
+.cardTemplate__textside--title h2 {
+  font-family: "Asap Regular", sans-serif;
+  font-size: 2.4rem;
+  line-height: 1.1;
+  color: #616161;
+  font-weight: lighter;
+}
+.cardTemplate__textside hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+.cardTemplate__textside--text p {
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  color: #616161;
+  font-family: "Poppins Regular", sans-serif;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.cardTemplate__textside--text p:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.cardTemplate__textside--text p span {
+  font-family: "Poppins SemiBold", sans-serif;
+}
+.cardTemplate__imgside {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.cardTemplate__imgside img {
+  width: 90%;
+  height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
