@@ -1389,6 +1389,9 @@ html {
   background-color: #fafafa;
 }
 
+.post {
+  padding: 5rem 0 8rem 0;
+}
 .post__content {
   border: 1px solid #ddd;
   border-radius: 1rem;
@@ -1401,6 +1404,11 @@ html {
 .post__content--img img {
   width: 100%;
   height: 100%;
+}
+.post__content--details {
+  padding: 2rem 0 1rem 0;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 4rem;
 }
 .post__content--details_date p {
   font-size: 1.8rem;
@@ -1418,17 +1426,119 @@ html {
   font-family: "Poppins Regular", sans-serif;
   font-weight: lighter;
 }
+.post__content--title {
+  margin-bottom: 2rem;
+}
 .post__content--title h1 {
   font-size: 3rem;
   color: #222;
   font-family: "Poppins SemiBold", sans-serif;
   font-weight: lighter;
 }
+.post__content--text {
+  margin-bottom: 2rem;
+}
 .post__content--text p {
   font-size: 1.4rem;
   color: #616161;
   line-height: 2.5rem;
   font-family: "Poppins Regular", sans-serif;
+}
+.post__social {
+  padding: 3rem 0 2rem 0;
+  border-bottom: 1px solid #ddd;
+}
+.post__social--share {
+  display: inline-block;
+  margin-right: 3rem;
+}
+.post__social--share p {
+  font-size: 1.4rem;
+  color: #222;
+  font-family: "Poppins SemiBold", sans-serif;
+  display: inline-block;
+}
+.post__social--icons {
+  display: inline-block;
+}
+.post__social--icons li {
+  list-style: none;
+  display: inline-block;
+}
+.post__social--icons li:not(:last-child) {
+  margin-right: 3rem;
+}
+.post__social--icons li a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #666;
+  -webkit-transition: ease all 0.2s;
+  -moz-transition: ease all 0.2s;
+  -ms-transition: ease all 0.2s;
+  -o-transition: ease all 0.2s;
+  transition: ease all 0.2s;
+}
+.post__social--icons li a:hover {
+  color: #5bb300;
+}
+.post__author {
+  padding: 7rem 0;
+}
+.post__author--title {
+  margin-bottom: 1.5rem;
+}
+.post__author--title p {
+  font-size: 1.8rem;
+  color: #333;
+  font-family: "Asap Medium", sans-serif;
+}
+.post__author--content {
+  padding: 3rem 3rem 4rem 3rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+}
+.post__author--content_user img {
+  border-radius: 50%;
+}
+.post__author--content_userinfo-name h5 {
+  font-size: 1.4rem;
+  color: #333;
+  font-family: "Poppins SemiBold", sans-serif;
+}
+.post__author--content_userinfo-info p {
+  font-size: 1.4rem;
+  color: #222;
+  font-family: "Poppins Regular", sans-serif;
+  display: inline-block;
+}
+.post__putcomments--title {
+  margin-bottom: 1.5rem;
+}
+.post__putcomments--title p {
+  font-size: 1.8rem;
+  color: #333;
+  font-family: "Asap Medium", sans-serif;
+}
+.post__putcomments--inp {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.post__putcomments--inp input {
+  width: 100%;
+  border: 0.1rem solid #dddddd;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+}
+.post__putcomments--inp textarea {
+  width: 100%;
+  resize: none;
+  padding: 1.4rem 2rem;
+  border: 0.1rem solid #dddddd;
+  border-radius: 0.5rem;
+  font-size: 14px;
+  height: 20rem;
+  margin-bottom: 1rem;
 }
 
 .putForMargin {
