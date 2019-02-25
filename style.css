@@ -38,6 +38,18 @@ html {
   font-family: "Asap SemiBold";
   src: url("fonts/Asap/Asap-SemiBold.ttf");
 }
+@font-face {
+  font-family: "Roboto Medium";
+  src: url("fonts/Roboto/Roboto-Medium.ttf");
+}
+@font-face {
+  font-family: "Roboto Regular";
+  src: url("fonts/Roboto/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: "Roboto Light";
+  src: url("fonts/Roboto/Roboto-Light.ttf");
+}
 /*===============================================*/
  *
  *                  /*FONTS*/
@@ -396,7 +408,6 @@ html {
 .store__hotstock {
   border-radius: 0.4rem 0.4rem 0.4rem 0.4rem;
   border: 1px solid #ddd;
-  margin-bottom: 4.5rem;
 }
 .store__hotstock--title {
   background: #1e773b;
@@ -541,6 +552,9 @@ html {
   margin-bottom: 1.5rem;
   position: relative;
 }
+.store__product--img a {
+  text-decoration: none;
+}
 .store__product--img img {
   width: 100%;
   height: 100%;
@@ -566,16 +580,17 @@ html {
   -o-transition: ease all 0.8s;
   transition: ease all 0.8s;
 }
-.store__product--img:hover > .store__product--img_1 {
+.store__product--img:hover > a .store__product--img_1 {
   transform: rotateY(-180deg);
 }
-.store__product--img:hover > .store__product--img_2 {
+.store__product--img:hover > a .store__product--img_2 {
   transform: rotateY(0deg);
 }
 .store__product--title {
   margin-bottom: 1rem;
 }
 .store__product--title a {
+  text-decoration: none;
   font-size: 1.4rem;
   color: #444;
   font-family: "Poppins Medium", sans-serif;
@@ -1058,6 +1073,366 @@ html {
 .cardTemplate__imgside img {
   width: 90%;
   height: 100%;
+}
+
+.cardStore {
+  padding: 5rem 0 6rem 0;
+}
+.cardStore__right--products {
+  margin-bottom: 4rem;
+}
+.cardStore__right--products--images {
+  width: 100%;
+  height: auto;
+}
+.cardStore__right--products--images_big {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+.cardStore__right--products--images_big img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  border: 1px solid #ddd;
+}
+.cardStore__right--products--images_littles {
+  padding: 0 2rem;
+}
+.cardStore__right--products--images_littles ul li {
+  width: 10.7rem;
+  height: 10.7rem;
+  display: inline-block;
+  list-style: none;
+}
+.cardStore__right--products--images_littles ul li:not(:last-child) {
+  margin-right: 0.5rem;
+}
+.cardStore__right--products--images_littles ul li img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  border: 1px solid #ddd;
+}
+.cardStore__right--products--description_title {
+  margin-bottom: 2rem;
+}
+.cardStore__right--products--description_title h1 {
+  font-size: 2.5rem;
+  font-family: "Roboto Regular", sans-serif;
+  font-weight: lighter;
+  color: #222;
+}
+.cardStore__right--products--description_price {
+  margin-bottom: 2rem;
+}
+.cardStore__right--products--description_price p {
+  font-size: 2.6rem;
+  color: #fa381d;
+  line-height: 2.5rem;
+  font-family: "Poppins SemiBold", sans-serif;
+}
+.cardStore__right--products--description_price p span {
+  color: #77a464;
+  font-size: 2rem;
+}
+.cardStore__right--products--description_test {
+  margin-bottom: 1.5rem;
+}
+.cardStore__right--products--description_test h4 {
+  font-family: "Asap Medium", sans-serif;
+  font-size: 1.8rem;
+  font-weight: lighter;
+  color: #424242;
+}
+.cardStore__right--products--description_text {
+  margin-bottom: 1.7rem;
+}
+.cardStore__right--products--description_text p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  text-align: justify;
+  font-family: "Poppins Regular", sans-serif;
+  margin-bottom: 1.8rem;
+}
+.cardStore__right--products--description_text ul li {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  text-align: justify;
+  font-family: "Poppins Regular", sans-serif;
+  list-style: none;
+}
+.cardStore__right--products--description_stock {
+  margin-bottom: 3rem;
+}
+.cardStore__right--products--description_stock p {
+  font-family: "Poppins SemiBold", sans-serif;
+  font-size: 1.4rem;
+  color: #222;
+}
+.cardStore__right--products--description_stock p span {
+  color: #1aab5b;
+}
+.cardStore__right--products--description_calculation {
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+.cardStore__right--products--description_calculation label {
+  width: 40%;
+  color: #222;
+  font-size: 1.4rem;
+  font-family: "Poppins SemiBold", sans-serif;
+  margin-right: 1.5rem;
+}
+.cardStore__right--products--description_calculation select {
+  width: 58%;
+  font-size: 1.4rem;
+  height: 4rem;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  padding-left: 0.5rem;
+  outline: none;
+}
+.cardStore__right--products--description_totalHidden {
+  display: none;
+}
+.cardStore__right--products--description_totalHidden p {
+  font-size: 2.6rem;
+  color: #fa381d;
+  line-height: 2.5rem;
+  font-family: "Poppins SemiBold", sans-serif;
+}
+.cardStore__right--products--description_units .store__show--select {
+  margin-right: 2rem;
+}
+.cardStore__right--products--description_units .contact__form--button {
+  display: inline-block;
+}
+.cardStore__right--nav ul {
+  width: 100%;
+  background-color: #f5f5f5;
+}
+.cardStore__right--nav ul li {
+  list-style: none;
+  display: table-cell;
+  border: none;
+}
+.cardStore__right--nav ul li a {
+  text-decoration: none;
+  color: #222;
+  font-size: 1.4rem;
+  font-family: "Poppins Medium", sans-serif;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  border: none;
+  display: block;
+  -webkit-transition: ease all 0.2s;
+  -moz-transition: ease all 0.2s;
+  -ms-transition: ease all 0.2s;
+  -o-transition: ease all 0.2s;
+  transition: ease all 0.2s;
+}
+.cardStore__right--nav ul li a:hover {
+  background-color: #1e773b;
+  color: #ffffff;
+}
+.cardStore__right--descriptionunder {
+  border: 1px solid #ddd;
+  padding: 6.5rem 4rem 3.5rem 4rem;
+}
+.cardStore__right--descriptionunder_title {
+  margin-bottom: 2rem;
+}
+.cardStore__right--descriptionunder_title h3 {
+  font-family: "Asap Regular", sans-serif;
+  font-weight: lighter;
+  font-size: 2.6rem;
+  color: #222;
+}
+.cardStore__right--descriptionunder_test p {
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  font-family: "Poppins SemiBold", sans-serif;
+  color: #616161;
+}
+.cardStore__right--descriptionunder_text {
+  margin-bottom: 1rem;
+}
+.cardStore__right--descriptionunder_text p {
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  font-family: "Poppins Regular", sans-serif;
+  color: #616161;
+}
+.cardStore__right--descriptionunder_li p {
+  font-family: "Asap Medium", sans-serif;
+  font-size: 1.8rem;
+  color: #616161;
+  margin-bottom: 1.5rem;
+}
+.cardStore__right--descriptionunder_li ul {
+  padding-left: 3rem;
+  margin-bottom: 3rem;
+}
+.cardStore__right--descriptionunder_li ul li {
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  font-family: "Poppins Regular", sans-serif;
+  color: #616161;
+}
+.cardStore__right--infounder {
+  border: 1px solid #ddd;
+  padding: 6rem 4rem 6rem 4rem;
+}
+.cardStore__right--infounder_title {
+  margin-bottom: 1rem;
+}
+.cardStore__right--infounder_title h3 {
+  font-family: "Asap Regular", sans-serif;
+  font-weight: lighter;
+  font-size: 3rem;
+  color: #616161;
+}
+.cardStore__right--infounder_info {
+  padding: 0.8rem 0;
+  border-top: 1px dotted rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #adadad;
+}
+.cardStore__right--infounder_info-name {
+  display: inline-block;
+  margin-right: 2rem;
+}
+.cardStore__right--infounder_info-name p {
+  font-size: 1.4rem;
+  color: #616161;
+  font-family: "Poppins SemiBold", sans-serif;
+}
+.cardStore__right--infounder_info-description {
+  display: inline-block;
+}
+.cardStore__right--infounder_info-description p {
+  font-size: 1.4rem;
+  color: #616161;
+  font-family: "Poppins Regular", sans-serif;
+  font-style: italic;
+}
+.cardStore__right--revision {
+  border: 1px solid #ddd;
+  padding: 6rem 4rem 6rem 4rem;
+}
+.cardStore__right--revision_title {
+  margin-bottom: 2rem;
+}
+.cardStore__right--revision_title h3 {
+  font-size: 1.8rem;
+  color: #222;
+  font-family: "Asap Regular", sans-serif;
+  font-weight: lighter;
+}
+.cardStore__right--revision_none {
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #ddd;
+}
+.cardStore__right--revision_none p {
+  font-size: 1.4rem;
+  color: #616161;
+  line-height: 2.5rem;
+  font-family: "Poppins Regular", sans-serif;
+}
+.cardStore__right--revision_befirst {
+  margin-bottom: 2rem;
+}
+.cardStore__right--revision_befirst p {
+  font-size: 1.6rem;
+  color: #666;
+  font-family: "Asap Regular", sans-serif;
+  line-height: 1.1;
+}
+.cardStore__right--revision_mirevision-label {
+  margin-bottom: 0.5rem;
+}
+.cardStore__right--revision_mirevision-label label {
+  color: #666;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  font-family: "Poppins Regular", sans-serif;
+}
+.cardStore__right--revision_mirevision-label label span {
+  color: #eb340a;
+}
+.cardStore__right--revision_mirevision-textarea {
+  width: 100%;
+  height: 10rem;
+  margin-bottom: 2rem;
+}
+.cardStore__right--revision_mirevision-textarea textarea {
+  resize: none;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #cecece;
+}
+.cardStore__right--revision_mirevision-inp {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.cardStore__right--revision_mirevision-inp input[type=text] {
+  width: 100%;
+  border: 1px solid #cecece;
+  padding: 1rem 0.6rem;
+  font-size: 1.4rem;
+  outline: none;
+}
+.cardStore__right--revision_mirevision-inp input[type=text]:focus {
+  background-color: #fafafa;
+}
+
+.post__content {
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+  padding: 3rem;
+}
+.post__content--img {
+  width: 100%;
+  height: auto;
+}
+.post__content--img img {
+  width: 100%;
+  height: 100%;
+}
+.post__content--details_date p {
+  font-size: 1.8rem;
+  color: #222;
+  font-family: "Poppins SemiBold", sans-serif;
+}
+.post__content--details_date p span {
+  font-size: 3.4rem;
+  color: #5bb300;
+}
+.post__content--details_comments a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: #555;
+  font-family: "Poppins Regular", sans-serif;
+  font-weight: lighter;
+}
+.post__content--title h1 {
+  font-size: 3rem;
+  color: #222;
+  font-family: "Poppins SemiBold", sans-serif;
+  font-weight: lighter;
+}
+.post__content--text p {
+  font-size: 1.4rem;
+  color: #616161;
+  line-height: 2.5rem;
+  font-family: "Poppins Regular", sans-serif;
+}
+
+.putForMargin {
+  margin-bottom: 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -43,7 +43,6 @@
     &__hotstock
         border-radius: .4rem .4rem .4rem .4rem
         border: 1px solid #ddd
-        margin-bottom: 4.5rem
         &--title
             background: $othergreen
             padding: 2rem 2rem
@@ -163,6 +162,9 @@
             height: 100%
             margin-bottom: 1.5rem
             position: relative
+            a
+                text-decoration: none
+
             img
                 width: 100%
                 height: 100%
@@ -177,15 +179,16 @@
                 left: 0
                 transform: rotateY(180deg)
                 +transition(.8s)
-            &:hover > .store__product--img_1
+            &:hover > a .store__product--img_1
                 transform: rotateY(-180deg)
-            &:hover > .store__product--img_2
+            &:hover > a .store__product--img_2
                 transform: rotateY(0deg)
 
 
         &--title
             margin-bottom: 1rem
             a
+                text-decoration: none
                 font-size: 1.4rem
                 color: #444
                 font-family: $p-med
