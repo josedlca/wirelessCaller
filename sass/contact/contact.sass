@@ -2,6 +2,7 @@
     padding: 6rem 0
     &__form
         padding: 0 2rem 0 
+        margin-bottom: 1rem
         +respond(phone)
             margin-bottom: 3rem
         &--title
@@ -45,6 +46,29 @@
                 cursor: pointer
                 &:hover
                     background-color: #225031 
+    &__message //this message is for the validation of contact form
+        padding: 0 2rem 0
+        margin-bottom: .5rem
+        // display: none
+        &--wrong
+            padding: 1rem 1.4rem
+            background: rgba(245, 55, 55, 0.97)
+            border-radius: 1.5rem
+            text-align: center
+            p
+                font-size: 1.3rem
+                color: $white
+                font-family: $p-reg
+                font-weight: lighter
+        &--success
+            padding: 1rem 1.4rem
+            background: #468dcb
+            text-align: center
+            p
+                font-size: 1.3rem
+                color: $white
+                font-family: $p-reg
+                font-weight: lighter
     &__description
         padding: 0 0 0 2rem
         &--title

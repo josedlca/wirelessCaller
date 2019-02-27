@@ -255,3 +255,27 @@
 .deploy:hover > .header__dropdown 
     opacity: 1   
     visibility: visible 
+
+// arrow styles
+.arrow-up 
+    position: fixed
+    bottom: 1.5rem
+    right: 1.5rem
+    width: 4rem
+    height: 4rem
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: #468dcb 
+    border-radius: 50%
+    visibility: visible
+    opacity: 1
+    z-index: 1
+    +transition(.3s)
+    i
+        color: #fff
+        font-size: 3rem
+
+.hide-arrow 
+    opacity: 0
+    visibility: hidden !important
