@@ -72,6 +72,16 @@ html {
   text-align: right;
 }
 
+@media only screen and (min-width: 112.5em) {
+  .my-tc {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 75em) {
+  .my-tc {
+    text-align: center;
+  }
+}
 @media only screen and (max-width: 56.25em) {
   .my-tc {
     text-align: center;
