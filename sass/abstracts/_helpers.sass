@@ -8,11 +8,25 @@
         text-align: center
     &-r
         text-align: right
+
+
+.my-tc
+    +respond(tab-port)
+        text-align: center
+    +respond(phone)
+        text-align: left
 /*===============================================*/
                     /*TRICK*/
 /*===============================================*/
 .p
     &-st
         position: static!important
+        text-align: right
     &-rl
         position: relative!important
+        +respond(tab-port)
+            position: static!important
+
+.d-f
+    display: flex
+    justify-content: space-between

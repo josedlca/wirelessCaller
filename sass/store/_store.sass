@@ -43,6 +43,8 @@
     &__hotstock
         border-radius: .4rem .4rem .4rem .4rem
         border: 1px solid #ddd
+        +respond(phone)
+            margin-bottom: 6rem
         &--title
             background: $othergreen
             padding: 2rem 2rem
@@ -81,6 +83,9 @@
                     display: flex
                     flex-wrap: wrap
                     align-self: center
+                    +respond(tab-port)
+                        width: 45%
+                        margin-left: 3%
 
                     a
                         font-size: 1.4rem
@@ -123,6 +128,7 @@
             color: $moreblack
             font-family: $p-reg
             display: inline-block
+            margin-right: 1rem
         &--select
             border: 1px solid #d7d7d7
             border-radius: .4rem
@@ -139,6 +145,8 @@
         border-radius: .4rem
         display: inline-block
         margin-bottom: 3.5rem
+        +respond(phone)
+            float: right
         p
             font-size: 1.4rem
             padding: 1rem 4rem 1rem 1rem

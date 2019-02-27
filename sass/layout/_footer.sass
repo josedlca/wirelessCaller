@@ -1,18 +1,25 @@
 .footer
     padding: 5rem 0
     background-color: $footerblack
+    +respond(phone)
+        padding: 3rem 0
     &__social
-        li
-            list-style: none
-            display: inline-block
-            &:not(:last-child)
-                margin-right: 1.5rem
-            a
-                font-size: 2rem
-                color: $equalgrey   
-                +transition(.2s)
-                &:hover
-                    color:   $socialgreen       
+        +respond(phone)
+            margin-bottom: 3rem
+        ul
+            +respond(phone)
+                text-align: center
+            li
+                list-style: none
+                display: inline-block
+                &:not(:last-child)
+                    margin-right: 1.5rem
+                a
+                    font-size: 2rem
+                    color: $equalgrey   
+                    +transition(.2s)
+                    &:hover
+                        color:   $socialgreen       
     &__copyright
         display: block
         text-align: center

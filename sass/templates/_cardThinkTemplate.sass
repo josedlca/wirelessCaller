@@ -15,6 +15,8 @@
             border: 0
             border-top: 1px solid #eee
         &--text
+            +respond(phone)
+                margin-bottom: 3rem
             p
                 font-size: 1.4rem
                 line-height: 2.5rem
@@ -28,8 +30,12 @@
                     font-family: $p-smb
     &__imgside
         width: 100%
-        height: auto
+        height: 100%
         text-align: center
         img
-            width: 90%
+            width: 100%
             height: 100%
+
+.cardThinkTemplate .greenbar .greenbar__return
+    +respond(phone)
+        display: none

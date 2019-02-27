@@ -17,12 +17,19 @@
                         border: 1px solid #ddd
                 &_littles
                     padding: 0 2rem
+                    +respond(tab-port)
+                        margin-bottom: 3rem
+                    +respond(phone)
+                        margin-bottom: 4rem
                     ul
                         li
                             width: 10.7rem
                             height: 10.7rem
                             display: inline-block
                             list-style: none
+                            +respond(phone)
+                                width: 9rem
+                                height: 9rem
                             &:not(:last-child)
                                 margin-right: .5rem
                             img
@@ -30,6 +37,8 @@
                                 height: 100%
                                 border-radius: 1rem
                                 border: 1px solid #ddd
+                                &:hover
+                                    border: 1px solid #5bb300
             &--description
                 &_title
                     margin-bottom: 2rem
@@ -117,6 +126,9 @@
                     list-style: none
                     display: table-cell
                     border: none
+                    +respond(phone)
+                        display: block
+                        text-align: center
                     a
                         text-decoration: none
                         color: #222
@@ -255,4 +267,27 @@
                         &:focus
                             background-color: #fafafa
 
+.cardStore__right--descriptionunder
+    display: none
 
+.cardStore__right--infounder
+    display: none
+.cardStore__right--revision
+    display: none
+
+
+
+.cardStore__right--infounder:target 
+    display: inline-block
+
+.cardStore__right--revision:target
+    display: inline-block
+
+.cardStore__right--descriptionunder:target
+    display: inline-block
+
+// cardStoreTemplate only for responsive
+
+.cardStoreTemplate .greenbar .greenbar__return
+    +respond(phone)
+        display: none

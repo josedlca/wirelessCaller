@@ -1,4 +1,9 @@
 .slider
-    img
+    &__img
         width: 100%
-        height: 64.4rem
+        height: 100%
+        +respond(phone)
+            height: 27rem
+        img
+            width: 100%
+            height: 100%
