@@ -222,10 +222,11 @@ html {
 }
 
 .dropmenu {
-  display: inline-block;
+  display: none;
 }
 @media only screen and (max-width: 37.5em) {
   .dropmenu {
+    display: inline-block;
     text-align: left;
   }
 }
