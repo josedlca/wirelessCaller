@@ -1015,7 +1015,7 @@ html {
 }
 .store__date p {
   font-size: 1.4rem;
-  padding: 1rem 4rem 1rem 1rem;
+  padding: 0.4rem 4rem 0.4rem 1rem;
   display: inline-block;
   border-right: 1px solid #d7d7d7;
   color: #444444;
@@ -1032,13 +1032,11 @@ html {
 .store__date--dropdown {
   position: absolute;
   right: 0;
-  top: 0;
   width: 100%;
   background: #ffffff;
   border: 1px solid #d7d7d7;
   border-radius: 0.4rem;
   opacity: 0;
-  transform: translateY(-100%);
   visibility: hidden;
   z-index: 2;
   -webkit-transition: ease all 0.25s !important;
@@ -1061,7 +1059,7 @@ html {
   text-decoration: none;
   color: #444444;
   display: block;
-  padding: 0.8rem 1rem;
+  padding: 0.4rem 1rem;
   -webkit-transition: ease all 0.2s !important;
   -moz-transition: ease all 0.2s !important;
   -ms-transition: ease all 0.2s !important;
