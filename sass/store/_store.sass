@@ -133,18 +133,57 @@
             border: 1px solid #d7d7d7
             border-radius: .4rem
             display: inline-block
+            position: relative
+            &:hover > .store__show--dropdown
+                opacity: 1
+                visibility: visible
             p
                 font-size: 1.4rem
                 padding: 1rem 2rem 1rem 1rem
                 display: inline-block
                 border-right: 1px solid #d7d7d7
+                cursor: pointer
+                &:hover
+                    color: #a1c531
             i
                 padding: 0 1.3rem 0 1.5rem
+        &--dropdown
+            position: absolute
+            right: 0
+            width: 100%
+            background: #ffffff
+            border: 1px solid #d7d7d7
+            border-radius: .4rem
+            opacity: 0
+            visibility: hidden
+            z-index: 2
+            +transition(.25s)
+            li
+                list-style: none
+                font-size: 1.4rem
+                color: #444444
+                font-family: $p-reg
+                text-align: left
+                &:not(:last-child)
+                    border-bottom: 1px solid #d7d7d7
+                a
+                    text-decoration: none
+                    color: #444444
+                    display: block
+                    padding: .8rem 1rem
+                    +transition(.2s)
+                    &:hover
+                        color: #656464
+                        background: #D8D8D8
     &__date
         border: 1px solid #d7d7d7
         border-radius: .4rem
         display: inline-block
+        position: relative
         margin-bottom: 3.5rem
+        &:hover > .store__date--dropdown
+            opacity: 1
+            visibility: visible
         +respond(phone)
             float: right
         p
@@ -154,9 +193,43 @@
             border-right: 1px solid #d7d7d7
             color: #444444
             font-family: $p-reg
+            cursor: pointer
+            &:hover
+                color: #a1c531
         i
             padding: 0 1.3rem 0 1.5rem
             color: #444444
+
+        &--dropdown
+            position: absolute
+            right: 0
+            top: 0
+            width: 100%
+            background: #ffffff
+            border: 1px solid #d7d7d7
+            border-radius: .4rem
+            opacity: 0
+            transform: translateY(-100%)
+            visibility: hidden
+            z-index: 2
+            +transition(.25s)
+            li
+                list-style: none
+                font-size: 1.4rem
+                color: #444444
+                font-family: $p-reg
+                text-align: left
+                &:not(:last-child)
+                    border-bottom: 1px solid #d7d7d7
+                a
+                    text-decoration: none
+                    color: #444444
+                    display: block
+                    padding: .8rem 1rem
+                    +transition(.2s)
+                    &:hover
+                        color: #656464
+                        background: #D8D8D8
 
     &__product
         border: 1px solid #ddd
