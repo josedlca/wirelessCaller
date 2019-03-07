@@ -51,16 +51,27 @@
     &__send //this is the message when you send the form
         position: absolute
         transform: translateY(-50%)
-        padding: 0 2rem
+        padding: 0 2rem 3rem 2rem
         opacity: 0
         visibility: hidden
         +transition(.4s)
-        p
-            font-family: $a-med
-            font-size: 3rem
-            color: $gray
+        &--check
             text-align: center
-
+            margin-bottom: 2rem
+        &--bigmessage
+            margin-bottom: 2rem
+            p
+                font-family: $a-med
+                font-size: 3rem
+                color: $gray
+                text-align: center
+        &--lowmessage
+            p
+                font-family: $a-med
+                font-size: 1.6rem
+                color: #c1c0c0
+                text-align: ce
+                margin-bottom: 2rem
     &__message //this message is for the validation of contact form
         padding: 0 2rem 0
         margin-bottom: .5rem
@@ -103,6 +114,26 @@
                 // this is onli for the finances styles(call a little trick) 
                 &:nth-child(2)
                     padding: 2rem 0
+
+        &--phones
+            margin-bottom: 2rem
+            ul
+                li
+                    list-style: none
+                    display: inline-block
+                    text-align: center
+                    &:not(:last-child)
+                        margin-right: 1rem
+                    img
+                        border-radius: 50%
+                    p
+                        font-size: 1.2rem
+                        color: $gray
+                        line-height: 2.5rem
+                        font-family: $p-reg
+                        span
+                            margin-right: .5rem
+
         &--contactus
             margin-bottom: 4rem
             &_title
@@ -148,6 +179,28 @@
                         text-decoration: none
                         color: $white
                         font-size: 1.6rem
+
+// for wsp icon
+
+.wsp
+    display: inline-block
+    position: absolute
+    bottom: 1rem
+    right: 1rem
+    a
+        text-decoration: none
+        display: flex
+        justify-content: center
+        align-items: center
+        background: #3CE561
+        color: $white
+        width: 4rem
+        height: 4rem
+        font-size: 3rem
+        border-radius: 50%
+        +transition(.2s) 
+        &:hover
+            transform: scale(1.2)
 
 // just for responsive
 

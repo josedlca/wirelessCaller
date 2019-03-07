@@ -11,6 +11,10 @@ html {
   scroll-behavior: smooth;
 }
 
+main {
+  position: relative;
+}
+
 @font-face {
   font-family: "Poppins Regular";
   src: url("fonts/Poppins/Poppins-Regular.ttf");
@@ -94,6 +98,48 @@ html {
   }
 }
 
+@media only screen and (min-width: 112.5em) {
+  .hidde-desk {
+    display: block;
+  }
+}
+@media only screen and (max-width: 75em) {
+  .hidde-desk {
+    display: block;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .hidde-desk {
+    display: none;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .hidde-desk {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 112.5em) {
+  .show-phone {
+    display: none;
+  }
+}
+@media only screen and (max-width: 75em) {
+  .show-phone {
+    display: none;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .show-phone {
+    display: block;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .show-phone {
+    display: block;
+  }
+}
+
 /*===============================================*/
  *
  *                  /*TRICK*/
@@ -116,6 +162,12 @@ html {
   justify-content: space-between;
 }
 
+@media only screen and (max-width: 37.5em) {
+  main {
+    padding-top: 12rem;
+  }
+}
+
 .header {
   padding-bottom: 1.7rem;
 }
@@ -129,7 +181,15 @@ html {
   .header {
     padding: 0 0;
     margin-bottom: 1rem;
+    position: fixed;
+    background: #fff;
+    width: 100%;
+    z-index: 5;
   }
+}
+.header__logo {
+  position: relative;
+  z-index: 4;
 }
 @media only screen and (max-width: 37.5em) {
   .header__logo {
@@ -217,8 +277,8 @@ html {
 .header__icons--search_countries, .header__icons--world_countries {
   position: absolute;
   top: 50%;
-  left: 0;
-  transform: translateX(-50%);
+  right: 50%;
+  transform: translateX(50%);
   border: 1px solid #ccc;
   border-radius: 0.5rem;
   background-color: #ffffff;
@@ -254,7 +314,6 @@ html {
 }
 .header__icons--search_countries li a img, .header__icons--world_countries li a img {
   border-radius: 50%;
-  margin-right: 1rem;
   width: 2rem;
   height: 2rem;
 }
@@ -369,42 +428,51 @@ html {
   width: 100%;
   height: 100%;
   visibility: visible;
-  display: block;
   position: relative;
   transform: translateX(0%);
 }
 .thinkmenu li {
   list-style: none;
-  width: 100%;
-  background: #468dcb;
-  border-top: 1px solid #4c7aa3;
+  background: #ffffff;
+  border-bottom: 1px solid #ddd;
   text-align: center;
   font-size: 1.6rem;
-  padding: 1rem 1rem;
+  padding: 1rem 0;
+}
+.thinkmenu li:first-child {
+  border-top: 1px solid #ddd;
+  margin-top: 1rem;
+}
+.thinkmenu li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
 }
 .thinkmenu li a {
   text-decoration: none;
-  color: #ffffff;
-  font-family: "Poppins SemiBold", sans-serif;
   display: block;
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #616161;
+  text-transform: uppercase;
+  font-family: "Poppins Regular", sans-serif;
 }
 
 .cruz {
   display: inline-block;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 1rem;
+  right: 1rem;
   width: 4rem;
-  background: #ffffff;
-  height: 100%;
+  background: #616161;
+  border-radius: 0.5rem;
+  height: 4rem;
 }
 
 .up {
   content: "";
   width: 2rem;
   height: 0.2rem;
-  background: #468dcb;
-  color: #468dcb;
+  background: #ffffff;
   display: inline-block;
   position: absolute;
   left: 25%;
@@ -425,8 +493,7 @@ html {
   content: "";
   width: 2rem;
   height: 0.2rem;
-  background: #468dcb;
-  color: #468dcb;
+  background: #ffffff;
   display: inline-block;
   bottom: 50%;
   position: absolute;
@@ -443,6 +510,7 @@ html {
   position: relative;
   transform: translateX(-100%);
   height: 0px;
+  display: none;
 }
 
 .header__dropdown {
@@ -567,8 +635,8 @@ html {
 }
 .navigation__button {
   background-color: #ffffff;
-  height: 7rem;
-  width: 7rem;
+  height: 6rem;
+  width: 6rem;
   position: fixed;
   top: 6rem;
   right: 6rem;
@@ -586,19 +654,19 @@ html {
 }
 @media only screen and (max-width: 37.5em) {
   .navigation__button {
-    top: 1rem;
+    top: 2rem;
     left: 1rem;
   }
 }
 .navigation__background {
-  height: 6rem;
-  width: 6rem;
+  height: 5rem;
+  width: 5rem;
   border-radius: 50%;
   position: fixed;
   top: 6.5rem;
   right: 6.5rem;
-  background-image: radial-gradient(#70c053, #19ab5b);
-  z-index: 1000;
+  background: #ffffff;
+  z-index: 2;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
 }
 @media only screen and (max-width: 56.25em) {
@@ -609,7 +677,7 @@ html {
 }
 @media only screen and (max-width: 37.5em) {
   .navigation__background {
-    top: 1.5rem;
+    top: 2.5rem;
     left: 1.5rem;
   }
 }
@@ -631,36 +699,36 @@ html {
   transform: translate(-150%, -50%);
   list-style: none;
   text-align: center;
+  height: 55vh;
+  overflow: scroll;
   width: 100%;
   visibility: hidden;
-  -webkit-transition: ease all 1s !important;
-  -moz-transition: ease all 1s !important;
-  -ms-transition: ease all 1s !important;
-  -o-transition: ease all 1s !important;
-  transition: ease all 1s !important;
+  -webkit-transition: ease all 0.7s !important;
+  -moz-transition: ease all 0.7s !important;
+  -ms-transition: ease all 0.7s !important;
+  -o-transition: ease all 0.7s !important;
+  transition: ease all 0.7s !important;
 }
 .navigation__item {
-  margin: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid #ddd;
+  position: relative;
 }
 .navigation__link:link, .navigation__link:visited {
-  display: inline-block;
-  font-size: 3rem;
+  display: block;
+  font-size: 2.5rem;
   font-weight: 300;
-  color: #ffffff;
+  color: #616161;
   font-family: "Poppins Regular", sans-serif;
   text-decoration: none;
   text-transform: uppercase;
-  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #ffffff 50%);
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #000000 50%);
   background-size: 220%;
   transition: all 0.4s;
 }
-.navigation__link:link span, .navigation__link:visited span {
-  margin-right: 1.5rem;
-  display: inline-block;
-}
 .navigation__link:hover, .navigation__link:active {
   background-position: 100%;
-  color: #70c053;
+  color: #ffffff;
   transform: translateX(1rem);
 }
 .navigation__checkbox:checked ~ .navigation__background {
@@ -677,7 +745,7 @@ html {
 }
 .navigation__icon {
   position: relative;
-  margin-top: 3.5rem;
+  margin-top: 3rem;
 }
 .navigation__icon, .navigation__icon::before, .navigation__icon::after {
   width: 3rem;
@@ -869,7 +937,7 @@ html {
 }
 
 .ourproducts {
-  padding-bottom: 5rem;
+  padding: 5rem 0;
 }
 .ourproducts .container {
   padding: 0 5rem;
@@ -1725,7 +1793,7 @@ html {
 .contact__send {
   position: absolute;
   transform: translateY(-50%);
-  padding: 0 2rem;
+  padding: 0 2rem 3rem 2rem;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: ease all 0.4s !important;
@@ -1734,11 +1802,25 @@ html {
   -o-transition: ease all 0.4s !important;
   transition: ease all 0.4s !important;
 }
-.contact__send p {
+.contact__send--check {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.contact__send--bigmessage {
+  margin-bottom: 2rem;
+}
+.contact__send--bigmessage p {
   font-family: "Asap Medium", sans-serif;
   font-size: 3rem;
   color: #616161;
   text-align: center;
+}
+.contact__send--lowmessage p {
+  font-family: "Asap Medium", sans-serif;
+  font-size: 1.6rem;
+  color: #c1c0c0;
+  text-align: ce;
+  margin-bottom: 2rem;
 }
 .contact__message {
   padding: 0 2rem 0;
@@ -1792,6 +1874,29 @@ html {
 .contact__description--text p:nth-child(2) {
   padding: 2rem 0;
 }
+.contact__description--phones {
+  margin-bottom: 2rem;
+}
+.contact__description--phones ul li {
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+}
+.contact__description--phones ul li:not(:last-child) {
+  margin-right: 1rem;
+}
+.contact__description--phones ul li img {
+  border-radius: 50%;
+}
+.contact__description--phones ul li p {
+  font-size: 1.2rem;
+  color: #616161;
+  line-height: 2.5rem;
+  font-family: "Poppins Regular", sans-serif;
+}
+.contact__description--phones ul li p span {
+  margin-right: 0.5rem;
+}
 .contact__description--contactus {
   margin-bottom: 4rem;
 }
@@ -1843,6 +1948,33 @@ html {
   text-decoration: none;
   color: #ffffff;
   font-size: 1.6rem;
+}
+
+.wsp {
+  display: inline-block;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+.wsp a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #3CE561;
+  color: #ffffff;
+  width: 4rem;
+  height: 4rem;
+  font-size: 3rem;
+  border-radius: 50%;
+  -webkit-transition: ease all 0.2s !important;
+  -moz-transition: ease all 0.2s !important;
+  -ms-transition: ease all 0.2s !important;
+  -o-transition: ease all 0.2s !important;
+  transition: ease all 0.2s !important;
+}
+.wsp a:hover {
+  transform: scale(1.2);
 }
 
 .maincontact .greenbar .greenbar__return {

@@ -10,8 +10,8 @@
 
     &__button 
         background-color: $white
-        height: 7rem
-        width: 7rem
+        height: 6rem
+        width: 6rem
         position: fixed
         top: 6rem
         right: 6rem
@@ -27,20 +27,20 @@
         
 
         @include respond(phone) 
-            top: 1rem
+            top: 2rem
             left: 1rem
         
     
 
     &__background 
-        height: 6rem
-        width: 6rem
+        height: 5rem
+        width: 5rem
         border-radius: 50%
         position: fixed
         top: 6.5rem
         right: 6.5rem
-        background-image: radial-gradient($lightgreen, $green)
-        z-index: 1000
+        background: $white
+        z-index: 2
         transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1)
 
         @include respond(tab-port) 
@@ -49,7 +49,7 @@
         
 
         @include respond(phone) 
-            top: 1.5rem
+            top: 2.5rem
             left: 1.5rem
         
     
@@ -76,40 +76,35 @@
         transform: translate(-150%, -50%)
         list-style: none
         text-align: center
+        height: 55vh
+        overflow: scroll
         width: 100%
         visibility: hidden
-        +transition(1s)
-        // display: none
-    
+        +transition(.7s)
 
     &__item 
-        margin: 1rem
-    
+        padding: 1rem 0
+        border-bottom: 1px solid #ddd
+        position: relative
 
     &__link 
         &:link,
         &:visited 
-            display: inline-block
-            font-size: 3rem
+            display: block
+            font-size: 2.5rem
             font-weight: 300
-            color: $white
+            color: #616161
             font-family: $p-reg
             text-decoration: none
             text-transform: uppercase
-            background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $white 50%)
+            background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #000000 50%)
             background-size: 220%
             transition: all .4s
-
-            span 
-                margin-right: 1.5rem
-                display: inline-block
-            
-        
 
         &:hover,
         &:active 
             background-position: 100%
-            color: $lightgreen
+            color: $white
             transform: translateX(1rem)
         
     
@@ -133,7 +128,7 @@
     //icon
     &__icon 
         position: relative
-        margin-top: 3.5rem
+        margin-top: 3rem
 
         &,
         &::before,

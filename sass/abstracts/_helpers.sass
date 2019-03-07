@@ -19,6 +19,25 @@
         text-align: center
     +respond(phone)
         text-align: left
+
+.hidde-desk
+    +respond(big-desktop)
+        display: block
+    +respond(tab-land)
+        display: block
+    +respond(tab-port)
+        display: none
+    +respond(phone)
+        display: none
+.show-phone
+    +respond(big-desktop)
+        display: none
+    +respond(tab-land)
+        display: none
+    +respond(tab-port)
+        display: block
+    +respond(phone)
+        display: block
 /*===============================================*/
                     /*TRICK*/
 /*===============================================*/
@@ -34,3 +53,7 @@
 .d-f
     display: flex
     justify-content: space-between
+
+main
+    +respond(phone)
+        padding-top: 12rem
