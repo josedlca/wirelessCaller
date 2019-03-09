@@ -15,7 +15,7 @@
     <!-- header -->
     <header id="header" class="header">
         <div class="container-fluid p-rl">
-            <div class="row align-items-center">
+            <div class="row align-items-center justify-content-between">
 
                 <div class="col-2 show-phone">
                     <!-- nav toogle -->
@@ -58,7 +58,7 @@
                 </div>
 
                 <!-- logo part -->
-                <div class="col-8 col-md-4 col-lg-4">
+                <div class="col-8 col-md-3 col-lg-3">
                     <div class="header__logo">
                         <a href="#">
                             <img src="img/logo_wireless.png" alt="logo">
@@ -68,7 +68,7 @@
                 <!-- end logo part -->
 
                 <!-- nav part-->
-                <div class="col-6 col-md-5 col-lg-6 my-tc hidde-desk">
+                <div class="col-6 col-md-6 col-lg-6 my-tc hidde-desk">
                     <div class="header__nav">
                         <ul>
                             <li><a href="index.html">INICIO</a></li>
@@ -91,7 +91,7 @@
                                     <li><a href="cardThikforTemplate.12.html"><span><i class="fas fa-home"></i></span>Hogar</a></li>
                                 </ul>
                             </li>
-                            <li><a href="./store.html">TIENDA</a></li>
+                            <li><a href="./store.html">PRODUCTOS</a></li>
                             <li><a href="./blog.html">BLOG</a></li>
                             <li><a href="./contact.html">CONTACTO</a></li>
                         </ul>
@@ -100,25 +100,24 @@
                 <!-- end nav part-->
 
                 <!-- the icons -->
-                <div class="col-2 col-md-3 col-lg-2 p-st align-items-center">
+                <div class="col-2 col-md-3 col-lg-3 p-st align-items-center">
                     <div class="header__icons">
-                        <div class="header__icons--search">
-                            <i class="fas fa-search"></i>
-                        </div>
                         <div class="header__icons--world">
-                            <i class="fas fa-globe-americas"></i>
+                            <div class="header__icons--world_select" >
+                                <a href="#"><img src="img/argentina.png" alt="argentina">Argentina</a>
+                            </div>
                             <ul class="header__icons--world_countries">
                                 <li>
-                                    <a href="#"><img src="img/argentina.png" alt="argentina"></a>
+                                    <a href="#"><img src="img/argentina.png" alt="argentina">Argentina</a>
                                 </li>
                                 <li>
-                                    <a href="#"><img src="img/mexico.png" alt="mexico"></a>
+                                    <a href="#"><img src="img/mexico.png" alt="mexico">Mexico</a>
                                 </li>
                                 <li>
-                                    <a href="#"><img src="img/españa.png" alt="españa"></a>
+                                    <a href="#"><img src="img/españa.png" alt="españa">España</a>
                                 </li>
                                 <li>
-                                    <a href="#"><img src="img/ee.uu.png" alt="ee.uu"></a>
+                                    <a href="#"><img src="img/ee.uu.png" alt="ee.uu">EE.UU</a>
                                 </li>
                             </ul>
                         </div>
@@ -174,120 +173,33 @@
         </section>
         <!--end slider section-->
 
-        <!-- how works -->
-        <!-- <section class="howwork">
+        <!-- icon section -->
+        <section class="bigicons">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-6">
-                        <div class="howwork__description t-c">
-                            <div class="howwork__description--title t-c">
-                                <h2>¿Cómo funciona?</h2>
-                            </div>
-                            <div class="howwork__description--text t-c">
-                                <h1>Llamador Inalambrico </h1> permite una rápida, económica y eficiente comunicación entre managers, encargados, empleados, asistentes, personal sanitario y en general cualquier profesional del sector servicios.
-                            </div>
+                <div class="row t-c justify-content-around">
+                    <div class="col-md-3 t-c">
+                        <div class="bigicons__icon">
+                            <span><i class="fas fa-phone"></i></span>
+                            <p>212-869-3323</p>
                         </div>
                     </div>
-                    <div class="col-md-6 t-c">
-                        <div class="howwork__img">
-                            <img src="img/caller.png" alt="">
+                    <div class="col-md-3 t-c">
+                        <div class="bigicons__icon">
+                            <span><i class="fas fa-map-marker-alt"></i></span>
+                            <p>8273 NW Melrose Av ST Miami, Florida, 33197 United States</p>
                         </div>
                     </div>
+                    <div class="col-md-3 t-c">
+                        <div class="bigicons__icon">
+                            <span><i class="fas fa-envelope"></i></span>
+                            <p>support@merit.com</p>
+                        </div>
+                    </div>
+                    <hr>
                 </div>
             </div>
-        </section> -->
-        <!-- end how works -->
-
-        <!-- benefits -->
-        <!-- <section class="benefits">
-            <div class="container">
-                <div class="row">
-                    <div class="col-6 col-md-3 col-lg-3">
-                        <div class="benefits__card t-c">
-                            <div class="benefits__card--icon">
-                                <i class="far fa-hand-point-up"></i>
-                            </div>
-                            <div class="benefits__card--text">
-                                <h4>Sin Gestos Y Señas Molestas</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-3">
-                        <div class="benefits__card t-c">
-                            <div class="benefits__card--icon">
-                                <i class="far fa-clock"></i>
-                            </div>
-                            <div class="benefits__card--text">
-                                <h4>No Mas Esperas Para Sus Clientes</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-3">
-                        <div class="benefits__card t-c">
-                            <div class="benefits__card--icon">
-                                <i class="far fa-frown"></i>
-                            </div>
-                            <div class="benefits__card--text">
-                                <h4>Sin Perder Mas Ventas Por Falta De Atencion</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-3">
-                        <div class="benefits__card t-c">
-                            <div class="benefits__card--icon">
-                                <i class="far fa-thumbs-up"></i>
-                            </div>
-                            <div class="benefits__card--text">
-                                <h4>Mas Clientes + Beneficiados</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-6 col-md-3">
-                        <div class="benefits__card t-c">
-                            <div class="benefits__card--icon">
-                                <i class="far fa-sticky-note"></i>
-                            </div>
-                            <div class="benefits__card--text">
-                                <h4>Control Del Orden De Llamado Del Cliente</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-3">
-                        <div class="benefits__card t-c">
-                            <div class="benefits__card--icon">
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <div class="benefits__card--text">
-                                <h4>Atienda Rapidamente y Eficientemente</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-3">
-                        <div class="benefits__card t-c">
-                            <div class="benefits__card--icon">
-                             <i class="far fa-money-bill-alt"></i>
-                            </div>
-                        <div class="benefits__card--text">
-                            <h4>Aumenta La Facturacion 10 A 30%</h4>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-3">
-                        <div class="benefits__card t-c">
-                            <div class="benefits__card--icon">
-                                <i class="far fa-smile"></i>
-                            </div>
-                            <div class="benefits__card--text">
-                                <h4>Clientes Mejor Atendidos Y Satisfechos</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-        <!-- end benefits -->
+        </section>
+        <!-- icon section -->
 
         <!-- small store -->
         <section class="ourproducts">
@@ -295,31 +207,41 @@
                 <div class="row">
                     <div class="col-md-12 t-c">
                         <div class="ourproducts__title">
-                            <h2>Nuestros Productos</h2>
+                            <h2>OFERTAS DE LA SEMANA</h2>
                         </div>
                     </div>
                     <!-- cards -->
-                    <div class="col-md-6 col-lg-4 col-xl-4 t-c">
+                    <div class="col-md-6 col-lg-4 col-xl-3 t-c">
                         <div class="store__product">
                             <div class="store__product--img">
                                 <a href="#">
-                                    <img class="store__product--img_1" src="img/producto7.jpg" alt="card7">
-                                    <img class="store__product--img_2" src="img/producto7-7.jpg" alt="card7">
+                                    <img class="store__product--img_1" src="img/producto1.jpg" alt="card1">
+                                    <img class="store__product--img_2" src="img/producto1.jpg" alt="card1">
                                 </a>
                             </div>
                             <div class="store__product--title">
                                 <a href="cardStoreTemplate.html">Pulsador Only Button</a>
                             </div>
-                            <!-- <div class="store__product--price">
+                            <div class="store__product--price">
                                 <p>$290.00</p>
-                            </div> -->
-                            <a class="store__product--button" href="cardStoreTemplate.html">Mas Detalles</a>
+                            </div>
+                            <ul class="store__product--dots">
+                                <li><i class="far fa-dot-circle"></i></li>
+                                <li><i class="far fa-dot-circle"></i></li>
+                                <li><i class="far fa-dot-circle"></i></li>
+                            </ul>
+                            <div class="store__product--details">
+                                <a href="cardStoreTemplate.html">VER DETALLES</a>
+                            </div>
+                            <div class="store__product--greenbox">
+                                <a href="cardStoreTemplate.html"><i class="fas fa-info"></i></a>
+                            </div>
                         </div>
                     </div>
                     <!--end cards -->
 
                     <!-- cards -->
-                    <div class="col-md-6 col-lg-4 col-xl-4 t-c">
+                    <div class="col-md-6 col-lg-4 col-xl-3 t-c">
                         <div class="store__product">
                             <div class="store__product--img">
                                 <a href="cardStoreTemplate.html">
@@ -330,16 +252,26 @@
                             <div class="store__product--title">
                                 <a href="cardStoreTemplate.html">Pulsador Only Button</a>
                             </div>
-                            <!-- <div class="store__product--price">
+                            <div class="store__product--price">
                                 <p>$290.00</p>
-                            </div> -->
-                            <a class="store__product--button" href="cardStoreTemplate.html">Mas Detalles</a>
+                            </div>
+                            <ul class="store__product--dots">
+                                <li><i class="far fa-dot-circle"></i></li>
+                                <li><i class="far fa-dot-circle"></i></li>
+                                <li><i class="far fa-dot-circle"></i></li>
+                            </ul>
+                            <div class="store__product--details">
+                                <a href="cardStoreTemplate.html">VER DETALLES</a>
+                            </div>
+                            <div class="store__product--greenbox">
+                                <a href="cardStoreTemplate.html"><i class="fas fa-info"></i></a>
+                            </div>
                         </div>
                     </div>
                     <!--end cards -->
 
                     <!-- cards -->
-                    <div class="col-md-6 col-lg-4 col-xl-4 t-c">
+                    <div class="col-md-6 col-lg-4 col-xl-3 t-c">
                         <div class="store__product">
                             <div class="store__product--img">
                                 <a href="#">
@@ -350,16 +282,26 @@
                             <div class="store__product--title">
                                 <a href="cardStoreTemplate.html">Pulsador Only Button</a>
                             </div>
-                            <!-- <div class="store__product--price">
+                            <div class="store__product--price">
                                 <p>$290.00</p>
-                            </div> -->
-                            <a class="store__product--button" href="cardStoreTemplate.html">Mas Detalles</a>
+                            </div>
+                            <ul class="store__product--dots">
+                                <li><i class="far fa-dot-circle"></i></li>
+                                <li><i class="far fa-dot-circle"></i></li>
+                                <li><i class="far fa-dot-circle"></i></li>
+                            </ul>
+                            <div class="store__product--details">
+                                <a href="cardStoreTemplate.html">VER DETALLES</a>
+                            </div>
+                            <div class="store__product--greenbox">
+                                <a href="cardStoreTemplate.html"><i class="fas fa-info"></i></a>
+                            </div>
                         </div>
                     </div>
                     <!--end cards -->
 
                     <!-- cards -->
-                    <div class="col-md-6 col-lg-4 col-xl-4 t-c">
+                    <div class="col-md-6 col-lg-4 col-xl-3 t-c">
                         <div class="store__product">
                             <div class="store__product--img">
                                 <a href="#">
@@ -370,49 +312,20 @@
                             <div class="store__product--title">
                                 <a href="cardStoreTemplate.html">Pulsador Only Button</a>
                             </div>
-                            <!-- <div class="store__product--price">
+                            <div class="store__product--price">
                                 <p>$290.00</p>
-                            </div> -->
-                            <a class="store__product--button" href="cardStoreTemplate.html">Mas Detalles</a>
-                        </div>
-                    </div>
-                    <!--end cards -->
-
-                    <!-- cards -->
-                    <div class="col-md-6 col-lg-4 col-xl-4 t-c">
-                        <div class="store__product">
-                            <div class="store__product--img">
-                                <a href="#">
-                                    <img class="store__product--img_1" src="img/producto5.jpg" alt="card5">
-                                    <img class="store__product--img_2" src="img/producto5.jpg" alt="card5">
-                                </a>
                             </div>
-                            <div class="store__product--title">
-                                <a href="cardStoreTemplate.html">Pulsador Only Button</a>
+                            <ul class="store__product--dots">
+                                <li><i class="far fa-dot-circle"></i></li>
+                                <li><i class="far fa-dot-circle"></i></li>
+                                <li><i class="far fa-dot-circle"></i></li>
+                            </ul>
+                            <div class="store__product--details">
+                                <a href="cardStoreTemplate.html">VER DETALLES</a>
                             </div>
-                            <!-- <div class="store__product--price">
-                                <p>$290.00</p>
-                            </div> -->
-                            <a class="store__product--button" href="cardStoreTemplate.html">Mas Detalles</a>
-                        </div>
-                    </div>
-                    <!--end cards -->
-                    <!-- cards -->
-                    <div class="col-md-6 col-lg-4 col-xl-4 t-c">
-                        <div class="store__product">
-                            <div class="store__product--img">
-                                <a href="#">
-                                    <img class="store__product--img_1" src="img/producto6.jpg" alt="card6">
-                                    <img class="store__product--img_2" src="img/producto6.jpg" alt="card6">
-                                </a>
+                            <div class="store__product--greenbox">
+                                <a href="cardStoreTemplate.html"><i class="fas fa-info"></i></a>
                             </div>
-                            <div class="store__product--title">
-                                <a href="cardStoreTemplate.html">Pulsador Only Button</a>
-                            </div>
-                            <!-- <div class="store__product--price">
-                                <p>$290.00</p>
-                            </div> -->
-                            <a class="store__product--button" href="cardStoreTemplate.html">Mas Detalles</a>
                         </div>
                     </div>
                     <!--end cards -->
@@ -420,6 +333,160 @@
             </div>
         </section>
         <!-- small store -->
+
+        <!-- benefits -->
+        <section class="benefits">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-12 t-c">
+                                <div class="benefits__title">
+                                    <h2>VENTAJAS</h2>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-4">
+                                <div class="benefits__card t-c">
+                                    <div class="benefits__card--icon">
+                                        <i class="far fa-hand-point-up"></i>
+                                    </div>
+                                    <div class="benefits__card--text">
+                                        <h4>Sin Gestos Y Señas Molestas</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <div class="benefits__card t-c">
+                                    <div class="benefits__card--icon">
+                                        <i class="far fa-clock"></i>
+                                    </div>
+                                    <div class="benefits__card--text">
+                                        <h4>No Mas Esperas Para Sus Clientes</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <div class="benefits__card t-c">
+                                    <div class="benefits__card--icon">
+                                        <i class="far fa-frown"></i>
+                                    </div>
+                                    <div class="benefits__card--text">
+                                        <h4>Sin Perder Mas Ventas Por Falta De Atencion</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <div class="benefits__card t-c">
+                                    <div class="benefits__card--icon">
+                                        <i class="far fa-money-bill-alt"></i>
+                                    </div>
+                                <div class="benefits__card--text">
+                                    <h4>Aumenta La Facturacion 10 A 30%</h4>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <div class="benefits__card t-c">
+                                    <div class="benefits__card--icon">
+                                        <i class="far fa-sticky-note"></i>
+                                    </div>
+                                    <div class="benefits__card--text">
+                                        <h4>Control Del Orden De Llamado Del Cliente</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <div class="benefits__card t-c">
+                                    <div class="benefits__card--icon">
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                    <div class="benefits__card--text">
+                                        <h4>Atienda Rapidamente y Eficientemente</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="benefits__video">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/gPRaQeQ8pVY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end benefits -->
+
+        <!-- why choose us -->
+        <section class="choose">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="choose__description">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="choose__description--title">
+                                        <h2>Why Choose Us</h2>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="choose__description--italictext">
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="choose__description--text">
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita itaq eniet Expedita itas quae enventore  temporibus.</p>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="choose__boxes">
+                            <div class="choose__boxes--one">
+                                <div class="choose__boxes--one_icon">
+                                    <i class="fas fa-desktop"></i>
+                                </div>
+                                <div class="choose__boxes--one_text">
+                                    <p>3999</p>
+                                    <p>Projects Launched</p>
+                                </div>
+                            </div>
+                            <div class="choose__boxes--two">
+                                <div class="choose__boxes--two_icon">
+                                    <i class="fas fa-layer-group"></i>
+                                </div>
+                                <div class="choose__boxes--two_text">
+                                    <p>7900</p>
+                                    <p>Completed Goals</p>
+                                </div>
+                            </div>
+                            <div class="choose__boxes--three">
+                                <div class="choose__boxes--three_icon">
+                                    <i class="fas fa-bullseye"></i>
+                                </div>
+                                <div class="choose__boxes--three_text">
+                                    <p>8900</p>
+                                    <p>Happy Customers</p>
+                                </div>
+                            </div>
+                            <div class="choose__boxes--four">
+                                <div class="choose__boxes--four_icon">
+                                    <i class="fas fa-laptop-code"></i>
+                                </div>
+                                <div class="choose__boxes--four_text">
+                                    <p>10092</p>
+                                    <p>Cars in Stock</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end why choose us -->
 
         <!-- beforefooter -->
         <section class="beforefooter">
