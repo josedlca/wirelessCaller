@@ -18,16 +18,16 @@ cruzButton.addEventListener('click', function(){
 })
 
 // arrow up
-let arrowUp = document.querySelector('.arrow-up');
+// let arrowUp = document.querySelector('.arrow-up');
 
-arrowUp.classList.add('hide-arrow');
-window.addEventListener('scroll',function(){
-    if(window.pageYOffset >20){
-        arrowUp.classList.remove('hide-arrow');
-    }else{
-        arrowUp.classList.add('hide-arrow');
-    }
-});
+// arrowUp.classList.add('hide-arrow');
+// window.addEventListener('scroll',function(){
+//     if(window.pageYOffset >20){
+//         arrowUp.classList.remove('hide-arrow');
+//     }else{
+//         arrowUp.classList.add('hide-arrow');
+//     }
+// });
 
 
 // SendForm tester

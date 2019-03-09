@@ -14,10 +14,50 @@
     <!-- header -->
     <header id="header" class="header">
         <div class="container-fluid p-rl">
-            <div class="row align-items-center">
+            <div class="row align-items-center justify-content-between">
+
+                <div class="col-2 col-md-3 show-phone">
+                    <!-- nav toogle -->
+                    <div class="navigation">
+                        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+                        <label for="navi-toggle" class="navigation__button" id="nav-button">
+                            <span class="navigation__icon">&nbsp;</span>
+                        </label>
+
+                        <div class="navigation__background">&nbsp;</div>
+
+                        <nav class="navigation__nav desapear">
+                            <ul class="navigation__list">
+                                <li class="navigation__item"><a href="index.html" class="navigation__link">INICIO</a></li>
+                                <li class="navigation__item"><a href="./thinkfor.html" class="navigation__link">PENSADO PARA</a> <div class="cruz"><div class="up"></div><div class="bot"></div></div>
+                                    <ul class="thinkmenu hiddenchild">
+                                        <li><a href="cardThikforTemplate.html"> Restaurantes</a></li>
+                                        <li><a href="cardThikforTemplate.1.html">Hoteles</a></li>
+                                        <li><a href="cardThikforTemplate.2.html">Salas de Juego</a></li>
+                                        <li><a href="cardThikforTemplate.3.html">Spas</a></li>
+                                        <li><a href="cardThikforTemplate.4.html">Gimnasios</a></li>
+                                        <li><a href="cardThikforTemplate.5.html">Hospitales</a></li>
+                                        <li><a href="cardThikforTemplate.6.html">Residencias</a></li>
+                                        <li><a href="cardThikforTemplate.7.html">Supermercados</a></li>
+                                        <li><a href="cardThikforTemplate.8.html">Comercios</a></li>
+                                        <li><a href="cardThikforTemplate.9.html">Fabricas e industrias</a></li>
+                                        <li><a href="cardThikforTemplate.10.html">Estaciones de servicio</a></li>
+                                        <li><a href="cardThikforTemplate.11.html">Oficinas y despachos</a></li>
+                                        <li><a href="cardThikforTemplate.12.html">Hogar</a></li>
+                                    </ul>
+                                </li>
+                                <li class="navigation__item"><a href="./store.html" class="navigation__link">TIENDA</a></li>
+                                <li class="navigation__item"><a href="./blog.html" class="navigation__link">BLOG</a></li>
+                                <li class="navigation__item"><a href="./contact.html" class="navigation__link">CONTACTO</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- end nav toogle-->
+                </div>
 
                 <!-- logo part -->
-                <div class="col-12 col-md-4 col-lg-4">
+                <div class="col-6 col-md-6 col-lg-2 col-xl-2 my-tc-invert">
                     <div class="header__logo">
                         <a href="#">
                             <img src="img/logo_wireless.png" alt="logo">
@@ -27,7 +67,7 @@
                 <!-- end logo part -->
 
                 <!-- nav part-->
-                <div class="col-6 col-md-5 col-lg-6 my-tc">
+                <div class="col-6 col-md-6 col-lg-8 col-xl-8 my-tc hidde-desk">
                     <div class="header__nav">
                         <ul>
                             <li><a href="index.html">INICIO</a></li>
@@ -50,69 +90,43 @@
                                     <li><a href="cardThikforTemplate.12.html"><span><i class="fas fa-home"></i></span>Hogar</a></li>
                                 </ul>
                             </li>
-                            <li><a href="./store.html">TIENDA</a></li>
+                            <li><a href="./store.html">PRODUCTOS</a></li>
                             <li><a href="./blog.html">BLOG</a></li>
                             <li><a href="./contact.html">CONTACTO</a></li>
                         </ul>
-                    </div>
-                    <div id="dropMenu" class="dropmenu">
-                        <div class="dropmenu__burguer">
-                            <i class="fas fa-bars"></i>
-                        </div>
                     </div>
                 </div>
                 <!-- end nav part-->
 
                 <!-- the icons -->
-                <div class="col-6 col-md-3 col-lg-2 p-st align-items-center">
+                <div class="col-4 col-md-3 col-lg-2 col-xl-2 p-st align-items-center">
                     <div class="header__icons">
-                        <div class="header__icons--search">
-                            <i class="fas fa-search"></i>
-                        </div>
                         <div class="header__icons--world">
-                            <i class="fas fa-globe-americas"></i>
+                            <div class="header__icons--world_select" >
+                                <a href="#"><img src="img/argentina.png" alt="argentina">Argentina</a>
+                            </div>
+                            <ul class="header__icons--world_countries">
+                                <li>
+                                    <a href="#"><img src="img/argentina.png" alt="argentina">Argentina</a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="img/mexico.png" alt="mexico">Mexico</a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="img/españa.png" alt="españa">España</a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="img/ee.uu.png" alt="ee.uu">EE.UU</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-
-                <div class="dropmenu__list hidden">
-                    <ul>
-                        <li><a href="index.html">INICIO</a></li>
-                        <li><a href="./thinkfor.html">PENSADO PARA</a> <div class="cruz"><div class="up"></div><div class="bot"></div></div></li>
-                        <ul class="thinkmenu hiddenchild">
-                            <li><a href="cardThikforTemplate.html"> Restaurantes</a></li>
-                            <li><a href="cardThikforTemplate.1.html">Hoteles</a></li>
-                            <li><a href="cardThikforTemplate.2.html">Salas de Juego</a></li>
-                            <li><a href="cardThikforTemplate.3.html">Spas</a></li>
-                            <li><a href="cardThikforTemplate.4.html">Gimnasios</a></li>
-                            <li><a href="cardThikforTemplate.5.html">Hospitales</a></li>
-                            <li><a href="cardThikforTemplate.6.html">Residencias</a></li>
-                            <li><a href="cardThikforTemplate.7.html">Supermercados</a></li>
-                            <li><a href="cardThikforTemplate.8.html">Comercios</a></li>
-                            <li><a href="cardThikforTemplate.9.html">Fabricas e industrias</a></li>
-                            <li><a href="cardThikforTemplate.10.html">Estaciones de servicio</a></li>
-                            <li><a href="cardThikforTemplate.11.html">Oficinas y despachos</a></li>
-                            <li><a href="cardThikforTemplate.12.html">Hogar</a></li>
-                        </ul>
-                        <li><a href="./store.html">TIENDA</a></li>
-                        <li><a href="./blog.html">BLOG</a></li>
-                        <li><a href="./contact.html">CONTACTO</a></li>
-                    </ul>
-                </div>
-                <!-- the icons -->
-
+                <!--end the icons -->
             </div>
         </div>
     </header>
     <!-- end header -->
-
-    <!-- arrow up -->
-    <div class="arrow-up">
-        <a href="#header">
-            <i class="fas fa-chevron-up"></i>
-        </a>
-    </div>
-    <!-- end arrow up -->
 
     <!-- content important or more significant of the page -->
     <main>
@@ -207,7 +221,7 @@
                                         </a>
                                     </div>
                                     <div class="store__product--title">
-                                        <a href="cardStoreTemplate.html">Pulsador Only Button</a>
+                                        <a href="cardStoreTemplate.html#one">Pulsador Only Button</a>
                                     </div>
                                     <div class="store__product--price">
                                         <p>$290.00</p>
@@ -218,10 +232,10 @@
                                         <li><i class="far fa-dot-circle"></i></li>
                                     </ul>
                                     <div class="store__product--details">
-                                        <a href="cardStoreTemplate.html">VER DETALLES</a>
+                                        <a href="cardStoreTemplate.html#one">VER DETALLES</a>
                                     </div>
                                     <div class="store__product--greenbox">
-                                        <a href="cardStoreTemplate.html"><i class="fas fa-info"></i></a>
+                                        <a href="cardStoreTemplate.html#one"><i class="fas fa-info"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -231,13 +245,13 @@
                             <div class="col-md-6 col-lg-4 col-xl-3 t-c">
                                 <div class="store__product">
                                     <div class="store__product--img">
-                                        <a href="cardStoreTemplate.html">
+                                        <a href="cardStoreTemplate.html#one">
                                             <img class="store__product--img_1" src="img/producto2.jpg" alt="card2">
                                             <img class="store__product--img_2" src="img/producto2.jpg" alt="card2">
                                         </a>
                                     </div>
                                     <div class="store__product--title">
-                                        <a href="cardStoreTemplate.html">Pulsador Only Button</a>
+                                        <a href="cardStoreTemplate.html#one">Pulsador Only Button</a>
                                     </div>
                                     <div class="store__product--price">
                                         <p>$290.00</p>
@@ -248,10 +262,10 @@
                                         <li><i class="far fa-dot-circle"></i></li>
                                     </ul>
                                     <div class="store__product--details">
-                                        <a href="cardStoreTemplate.html">VER DETALLES</a>
+                                        <a href="cardStoreTemplate.html#one">VER DETALLES</a>
                                     </div>
                                     <div class="store__product--greenbox">
-                                        <a href="cardStoreTemplate.html"><i class="fas fa-info"></i></a>
+                                        <a href="cardStoreTemplate.html#one"><i class="fas fa-info"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -261,13 +275,13 @@
                             <div class="col-md-6 col-lg-4 col-xl-3 t-c">
                                 <div class="store__product">
                                     <div class="store__product--img">
-                                        <a href="#">
+                                        <a href="cardStoreTemplate.html#one">
                                             <img class="store__product--img_1" src="img/producto3.jpg" alt="card3">
                                             <img class="store__product--img_2" src="img/producto3-3.jpg" alt="card3">
                                         </a>
                                     </div>
                                     <div class="store__product--title">
-                                        <a href="cardStoreTemplate.html">Pulsador Only Button</a>
+                                        <a href="cardStoreTemplate.html#one">Pulsador Only Button</a>
                                     </div>
                                     <div class="store__product--price">
                                         <p>$290.00</p>
@@ -278,10 +292,10 @@
                                         <li><i class="far fa-dot-circle"></i></li>
                                     </ul>
                                     <div class="store__product--details">
-                                        <a href="cardStoreTemplate.html">VER DETALLES</a>
+                                        <a href="cardStoreTemplate.html#one">VER DETALLES</a>
                                     </div>
                                     <div class="store__product--greenbox">
-                                        <a href="cardStoreTemplate.html"><i class="fas fa-info"></i></a>
+                                        <a href="cardStoreTemplate.html#one"><i class="fas fa-info"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -291,13 +305,13 @@
                             <div class="col-md-6 col-lg-4 col-xl-3 t-c">
                                 <div class="store__product">
                                     <div class="store__product--img">
-                                        <a href="#">
+                                        <a href="cardStoreTemplate.html#one">
                                             <img class="store__product--img_1" src="img/producto4.jpg" alt="card4">
                                             <img class="store__product--img_2" src="img/producto4-4.jpg" alt="card4">
                                         </a>
                                     </div>
                                     <div class="store__product--title">
-                                        <a href="cardStoreTemplate.html">Pulsador Only Button</a>
+                                        <a href="cardStoreTemplate.html#one">Pulsador Only Button</a>
                                     </div>
                                     <div class="store__product--price">
                                         <p>$290.00</p>
@@ -308,10 +322,10 @@
                                         <li><i class="far fa-dot-circle"></i></li>
                                     </ul>
                                     <div class="store__product--details">
-                                        <a href="cardStoreTemplate.html">VER DETALLES</a>
+                                        <a href="cardStoreTemplate.html#one">VER DETALLES</a>
                                     </div>
                                     <div class="store__product--greenbox">
-                                        <a href="cardStoreTemplate.html"><i class="fas fa-info"></i></a>
+                                        <a href="cardStoreTemplate.html#one"><i class="fas fa-info"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -327,7 +341,7 @@
                                         </a>
                                     </div>
                                     <div class="store__product--title">
-                                        <a href="cardStoreTemplate.html">Pulsador Only Button</a>
+                                        <a href="cardStoreTemplate.html#one">Pulsador Only Button</a>
                                     </div>
                                     <div class="store__product--price">
                                         <p>$290.00</p>
@@ -338,10 +352,10 @@
                                         <li><i class="far fa-dot-circle"></i></li>
                                     </ul>
                                     <div class="store__product--details">
-                                        <a href="cardStoreTemplate.html">VER DETALLES</a>
+                                        <a href="cardStoreTemplate.html#one">VER DETALLES</a>
                                     </div>
                                     <div class="store__product--greenbox">
-                                        <a href="cardStoreTemplate.html"><i class="fas fa-info"></i></a>
+                                        <a href="cardStoreTemplate.html#one"><i class="fas fa-info"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -356,7 +370,7 @@
                                         </a>
                                     </div>
                                     <div class="store__product--title">
-                                        <a href="cardStoreTemplate.html">Pulsador Only Button</a>
+                                        <a href="cardStoreTemplate.html#one">Pulsador Only Button</a>
                                     </div>
                                     <div class="store__product--price">
                                         <p>$290.00</p>
@@ -367,10 +381,10 @@
                                         <li><i class="far fa-dot-circle"></i></li>
                                     </ul>
                                     <div class="store__product--details">
-                                        <a href="cardStoreTemplate.html">VER DETALLES</a>
+                                        <a href="cardStoreTemplate.html#one">VER DETALLES</a>
                                     </div>
                                     <div class="store__product--greenbox">
-                                        <a href="cardStoreTemplate.html"><i class="fas fa-info"></i></a>
+                                        <a href="cardStoreTemplate.html#one"><i class="fas fa-info"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -386,7 +400,7 @@
                                         </a>
                                     </div>
                                     <div class="store__product--title">
-                                        <a href="cardStoreTemplate.html">Pulsador Only Button</a>
+                                        <a href="cardStoreTemplate.html#one">Pulsador Only Button</a>
                                     </div>
                                     <div class="store__product--price">
                                         <p>$290.00</p>
@@ -397,10 +411,10 @@
                                         <li><i class="far fa-dot-circle"></i></li>
                                     </ul>
                                     <div class="store__product--details">
-                                        <a href="cardStoreTemplate.html">VER DETALLES</a>
+                                        <a href="cardStoreTemplate.html#one">VER DETALLES</a>
                                     </div>
                                     <div class="store__product--greenbox">
-                                        <a href="cardStoreTemplate.html"><i class="fas fa-info"></i></a>
+                                        <a href="cardStoreTemplate.html#one"><i class="fas fa-info"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -416,7 +430,7 @@
                                         </a>
                                     </div>
                                     <div class="store__product--title">
-                                        <a href="cardStoreTemplate.html">Pulsador Only Button</a>
+                                        <a href="cardStoreTemplate.html#one">Pulsador Only Button</a>
                                     </div>
                                     <div class="store__product--price">
                                         <p>$290.00</p>
@@ -427,10 +441,10 @@
                                         <li><i class="far fa-dot-circle"></i></li>
                                     </ul>
                                     <div class="store__product--details">
-                                        <a href="cardStoreTemplate.html">VER DETALLES</a>
+                                        <a href="cardStoreTemplate.html#one">VER DETALLES</a>
                                     </div>
                                     <div class="store__product--greenbox">
-                                        <a href="cardStoreTemplate.html"><i class="fas fa-info"></i></a>
+                                        <a href="cardStoreTemplate.html#one"><i class="fas fa-info"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -446,7 +460,7 @@
                                         </a>
                                     </div>
                                     <div class="store__product--title">
-                                        <a href="cardStoreTemplate.html">Pulsador Only Button</a>
+                                        <a href="cardStoreTemplate.html#one">Pulsador Only Button</a>
                                     </div>
                                     <div class="store__product--price">
                                         <p>$290.00</p>
@@ -457,10 +471,10 @@
                                         <li><i class="far fa-dot-circle"></i></li>
                                     </ul>
                                     <div class="store__product--details">
-                                        <a href="cardStoreTemplate.html">VER DETALLES</a>
+                                        <a href="cardStoreTemplate.html#one">VER DETALLES</a>
                                     </div>
                                     <div class="store__product--greenbox">
-                                        <a href="cardStoreTemplate.html"><i class="fas fa-info"></i></a>
+                                        <a href="cardStoreTemplate.html#one"><i class="fas fa-info"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -476,7 +490,7 @@
                                         </a>
                                     </div>
                                     <div class="store__product--title">
-                                        <a href="cardStoreTemplate.html">Pulsador Only Button</a>
+                                        <a href="cardStoreTemplate.html#one">Pulsador Only Button</a>
                                     </div>
                                     <div class="store__product--price">
                                         <p>$290.00</p>
@@ -487,10 +501,10 @@
                                         <li><i class="far fa-dot-circle"></i></li>
                                     </ul>
                                     <div class="store__product--details">
-                                        <a href="cardStoreTemplate.html">VER DETALLES</a>
+                                        <a href="cardStoreTemplate.html#one">VER DETALLES</a>
                                     </div>
                                     <div class="store__product--greenbox">
-                                        <a href="cardStoreTemplate.html"><i class="fas fa-info"></i></a>
+                                        <a href="cardStoreTemplate.html#one"><i class="fas fa-info"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -554,6 +568,12 @@
             </div>
         </section>
         <!-- end cards and filters -->
+
+        <!-- wsp icon -->
+        <div class="wsp">
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <!-- end wsp icon -->
     </main>
     <!--end content important or more significant of the page -->
 

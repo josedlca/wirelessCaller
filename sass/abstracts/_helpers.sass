@@ -13,6 +13,8 @@
 .my-tc
     +respond(big-desktop)
         text-align: center
+    +respond(desktop)
+        text-align: center
     +respond(tab-land)
         text-align: center
     +respond(tab-port)
@@ -20,8 +22,22 @@
     +respond(phone)
         text-align: left
 
+.my-tc-invert
+    +respond(big-desktop)
+        text-align: left
+    +respond(desktop)
+        text-align: left
+    +respond(tab-land)
+        text-align: left
+    +respond(tab-port)
+        text-align: center
+    +respond(phone)
+        text-align: center
+
 .hidde-desk
     +respond(big-desktop)
+        display: block
+    +respond(desktop)
         display: block
     +respond(tab-land)
         display: block
@@ -31,6 +47,8 @@
         display: none
 .show-phone
     +respond(big-desktop)
+        display: none
+    +respond(desktop)
         display: none
     +respond(tab-land)
         display: none
@@ -54,6 +72,11 @@
     display: flex
     justify-content: space-between
 
+.table-back
+    background: #F6F6F6
+.table-bor
+    border-right: solid .1rem #F6F6F6
+
 main
     +respond(phone)
-        padding-top: 12rem
+        padding-top: 8.5rem

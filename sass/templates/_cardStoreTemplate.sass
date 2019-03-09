@@ -2,7 +2,7 @@
     padding: 5rem 0 6rem 0
     &__right
         &--products
-            margin-bottom: 4rem
+            // margin-bottom: 4rem
             &--images
                 width: 100%
                 height: auto
@@ -23,8 +23,8 @@
                         margin-bottom: 4rem
                     ul
                         li
-                            width: 10.7rem
-                            height: 10.7rem
+                            width: 9rem
+                            height: 9rem
                             display: inline-block
                             list-style: none
                             +respond(phone)
@@ -119,6 +119,7 @@
                     & .contact__form--button
                         display: inline-block
         &--nav
+            border-bottom: 1px solid #ddd
             ul
                 width: 100%
                 background-color: #f5f5f5
@@ -182,8 +183,8 @@
                         color: $gray
 
         &--infounder
-            border: 1px solid #ddd
-            padding: 6rem 4rem 6rem 4rem
+            // padding: 6rem 4rem 6rem 4rem
+            width: 100%
             &_title
                 margin-bottom: 1rem
                 h3
@@ -209,6 +210,44 @@
                         color: $gray
                         font-family: $p-reg
                         font-style: italic
+            table
+                width: 100%
+                border: 1px solid #ddd
+                border-collapse: collapse
+                margin-top: 2rem
+                tr
+                    th
+                        font-size: 1.3rem
+                        color: $gray
+                        font-family: $p-reg
+                        border-collapse: collapse
+                        padding: 1rem 0
+                        text-align: left
+
+                    td
+                        font-size: 1.3rem
+                        color: $gray
+                        font-family: $p-reg
+                        border-collapse: collapse
+                        padding: 1rem 0
+            &_icons
+                padding: 3rem 0
+                a
+                    text-decoration: none
+                    display: inline-flex
+                    width: 7rem
+                    height: 7rem
+                    justify-content: center
+                    align-items: center
+                    border: .3rem solid #40ad44
+                    color: #40ad44
+                    font-size: 4rem
+                    border-radius: 1rem
+                    +transition(.3s)
+                    &:hover
+                        background: #40ad44
+                        color: $white
+
 
         &--revision
             border: 1px solid #ddd

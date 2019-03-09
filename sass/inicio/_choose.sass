@@ -1,6 +1,8 @@
 .choose
     padding: 4rem 0
     &__description
+        +respond(phone)
+            margin-bottom: 2rem
         &--title
             margin-bottom: .7rem
             h2
@@ -41,6 +43,8 @@
             height: 50%
             border-right: .1rem solid #ddd
             padding-left: 2.5rem!important
+            +respond(phone)
+                padding-left: 0!important
         &--four
             width: 50%
             height: 50%
@@ -53,11 +57,21 @@
             justify-content: left
             align-items: center
             padding-left: 2rem
+            padding-bottom: 3rem
+            padding-top: 3rem
+            +respond(phone)
+                justify-content: center
+                padding-left: 0rem
             &_icon
                 font-size: 5rem
                 color: #40ad44
                 margin-right: 1rem
+                +respond(phone)
+                    margin-left: 2rem
+                    margin-right: 2rem
             &_text
+                +respond(phone)
+                    text-align: center
                 p:first-child
                     font-size: 3.6rem
                     font-family: $p-smb
