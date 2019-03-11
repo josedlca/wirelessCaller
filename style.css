@@ -295,6 +295,7 @@ main {
 }
 @media only screen and (max-width: 37.5em) {
   .header__logo a img {
+    width: 80%;
     padding: 2.5rem 0;
     display: inline-block;
   }
@@ -832,6 +833,8 @@ main {
 }
 @media only screen and (max-width: 37.5em) {
   .navigation__button {
+    width: 5rem;
+    height: 5rem;
     top: 1rem;
     left: 1rem;
   }
@@ -924,6 +927,11 @@ main {
 .navigation__icon {
   position: relative;
   margin-top: 3rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .navigation__icon {
+    margin-top: 2.5rem;
+  }
 }
 .navigation__icon, .navigation__icon::before, .navigation__icon::after {
   width: 3rem;
@@ -1330,7 +1338,11 @@ main {
 }
 .feature-box:hover {
   border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.65);
+}
+
+.f-size {
+  transform: scale(1.5);
 }
 
 .greenbar {
@@ -2148,13 +2160,27 @@ main {
   text-align: center;
   margin-bottom: 2rem;
   display: inline-flex;
-  width: 100%;
-  height: 100%;
+  width: 10rem;
+  height: 10rem;
+  background: #19ab5b;
   justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 7rem;
+  color: #ffffff;
 }
-.contact__send--check img {
-  width: 20%;
-  height: 70%;
+.contact__send--wrong {
+  text-align: center;
+  margin-bottom: 2rem;
+  display: inline-flex;
+  width: 10rem;
+  height: 10rem;
+  justify-content: center;
+  align-items: center;
+  background: red;
+  border-radius: 50%;
+  font-size: 7rem;
+  color: #ffffff;
 }
 .contact__send--bigmessage {
   margin-bottom: 2rem;
@@ -2229,14 +2255,13 @@ main {
 }
 .contact__description--phones ul li {
   list-style: none;
-  display: inline-block;
   text-align: center;
-}
-.contact__description--phones ul li:not(:last-child) {
-  margin-right: 1rem;
 }
 .contact__description--phones ul li img {
   border-radius: 50%;
+  height: 3.5rem;
+  width: 3.5rem;
+  margin-left: 1.1rem;
 }
 .contact__description--phones ul li p {
   font-size: 1.2rem;
@@ -2608,12 +2633,15 @@ main {
   border-bottom: 1px solid #ddd;
 }
 .cardStore__right--nav ul {
+  display: flex;
   width: 100%;
   background-color: #f5f5f5;
 }
 .cardStore__right--nav ul li {
   list-style: none;
-  display: table-cell;
+  display: inline-flex;
+  width: 33.33%;
+  text-align: center;
   border: none;
 }
 @media only screen and (max-width: 37.5em) {
@@ -2631,11 +2659,17 @@ main {
   background-color: #ffffff;
   border: none;
   display: block;
+  width: 100%;
   -webkit-transition: ease all 0.2s !important;
   -moz-transition: ease all 0.2s !important;
   -ms-transition: ease all 0.2s !important;
   -o-transition: ease all 0.2s !important;
   transition: ease all 0.2s !important;
+}
+@media only screen and (max-width: 37.5em) {
+  .cardStore__right--nav ul li a {
+    padding: 1rem 0;
+  }
 }
 .cardStore__right--nav ul li a:hover {
   background-color: #1e773b;
@@ -2731,7 +2765,7 @@ main {
   color: #616161;
   font-family: "Poppins Regular", sans-serif;
   border-collapse: collapse;
-  padding: 1rem 0;
+  padding: 1rem 0 1rem 1rem;
   text-align: left;
 }
 .cardStore__right--infounder table tr td {
@@ -2739,7 +2773,7 @@ main {
   color: #616161;
   font-family: "Poppins Regular", sans-serif;
   border-collapse: collapse;
-  padding: 1rem 0;
+  padding: 1rem 0 1rem 1rem;
 }
 .cardStore__right--infounder_icons {
   padding: 3rem 0;
@@ -2864,6 +2898,11 @@ main {
   .cardStoreTemplate .greenbar .greenbar__return {
     display: none;
   }
+}
+
+.active a {
+  background: #1e773b !important;
+  color: #ffffff !important;
 }
 
 .post {
