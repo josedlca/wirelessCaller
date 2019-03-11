@@ -2677,7 +2677,7 @@ main {
 }
 .cardStore__right--descriptionunder {
   border: 1px solid #ddd;
-  padding: 6.5rem 4rem 3.5rem 4rem;
+  padding: 2.5rem 4rem 1.5rem 4rem;
 }
 .cardStore__right--descriptionunder_title {
   margin-bottom: 2rem;
@@ -2801,7 +2801,7 @@ main {
 }
 .cardStore__right--revision {
   border: 1px solid #ddd;
-  padding: 6rem 4rem 6rem 4rem;
+  padding: 2.5rem 4rem 1.5rem 4rem;
 }
 .cardStore__right--revision_title {
   margin-bottom: 2rem;
