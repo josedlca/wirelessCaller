@@ -133,8 +133,25 @@
     <main>
         <!-- slider section-->
         <section class="slider">
-            <div class="slider__img">
-                <img src="img/slide1.jpg" alt="slider">
+            <div id="carousel" class="">
+                <div data-slidr="one" class="slider__img">
+                    <img src="img/Slider1.jpg" alt="slider">
+                    <div class="insideImg__text">
+                        <div class="insideImg__text--icon"><i class="fas fa-mobile-alt"></i></div>
+                        <h2>LOCALIZADORES</h2>
+                        <p>Informa a tus clientes cuando su mesa esta disponible o su pedido esta listo para llevar</p>
+                        <a href="#">Ver más</a>
+                    </div>
+                    <!-- <div class="insideImg__img">
+                        <img src="img/Slider1-subimage.png" alt="subimage">
+                    </div> -->
+                </div>
+                <div data-slidr="two" class="slider__img">
+                    <img src="img/Slider2.jpg" alt="slider">
+                </div>
+                <div data-slidr="three" class="slider__img">
+                    <img src="img/Slider3.jpg" alt="slider">
+                </div>
             </div>
         </section>
         <!--end slider section-->
@@ -531,5 +548,7 @@
     <!-- end footer -->
 
     <script src="js/wirelessCaller.js"></script>
+    <script src="js/slidr.min.js"></script>
+    <script src="js/sliderCustom.js"></script>
 </body>
 </html>

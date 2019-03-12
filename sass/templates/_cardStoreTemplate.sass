@@ -121,6 +121,8 @@
                         display: inline-block
         &--nav
             border-bottom: 1px solid #ddd
+            position: relative
+            z-index: 2
             ul
                 display: flex
                 width: 100%
@@ -153,6 +155,11 @@
         &--descriptionunder
             border: 1px solid #ddd
             padding: 2.5rem 4rem 1.5rem 4rem
+            position: absolute
+            transform: translateX(100%)
+            visibility: hidden
+            opacity: 0
+            +transition(.3s)
             &_title
                 margin-bottom: 2rem
                 h3
@@ -190,8 +197,12 @@
                         color: $gray
 
         &--infounder
-            // padding: 6rem 4rem 6rem 4rem
+            position: absolute
             width: 100%
+            transform: translateX(100%)
+            visibility: hidden
+            opacity: 0
+            +transition(.3s)
             &_title
                 margin-bottom: 1rem
                 h3
@@ -259,10 +270,15 @@
         &--revision
             border: 1px solid #ddd
             padding: 2.5rem 4rem 1.5rem 4rem
+            position: absolute
+            transform: translateX(100%)
+            visibility: hidden
+            opacity: 0
+            +transition(.3s)
             &_title
                 margin-bottom: 2rem
                 h3
-                    font-size: 1.8rem
+                    font-size: 2.8rem
                     color: #222
                     font-family: $a-reg
                     font-weight: lighter
@@ -313,32 +329,39 @@
                         &:focus
                             background-color: #fafafa
 
-.cardStore__right--descriptionunder
-    display: none
+// .cardStore__right--descriptionunder
+//     display: none
 
-.cardStore__right--infounder
-    display: none
-.cardStore__right--revision
-    display: none
+// .cardStore__right--infounder
+//     display: none
+// .cardStore__right--revision
+//     display: none
 
 
 
-.cardStore__right--infounder:target 
-    display: inline-block
+// .cardStore__right--infounder:target 
+//     display: inline-block
 
-.cardStore__right--revision:target
-    display: inline-block
+// .cardStore__right--revision:target
+//     display: inline-block
 
-.cardStore__right--descriptionunder:target
-    display: inline-block
+// .cardStore__right--descriptionunder:target
+//     display: inline-block
 
 // cardStoreTemplate only for responsive
 
-.cardStoreTemplate .greenbar .greenbar__return
-    +respond(phone)
-        display: none
+// .cardStoreTemplate .greenbar .greenbar__return
+//     +respond(phone)
+//         display: none
 
 .active
     a
         background: $othergreen!important
         color: $white!important
+
+.showInfo
+    position: relative
+    display: inline-block!important
+    visibility: visible!important
+    transform: translateX(0%)
+    opacity: 1!important
