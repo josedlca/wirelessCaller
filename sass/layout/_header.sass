@@ -1,13 +1,18 @@
 .header
     // padding-bottom: 1.7rem
     border-bottom: 1px solid #ddd
+    position: sticky
+    top: 0
+    z-index: 4
+    background: #fff
     +respond(tab-port)
         padding: 1.7rem 0
-        position: relative
+        position: sticky
+        top: 0
     +respond(phone)
         padding: 0 0
-        margin-bottom: 1rem
-        position: fixed
+        position: sticky
+        top: 0
         background: #fff
         width: 100%
         z-index: 5

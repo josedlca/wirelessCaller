@@ -3,13 +3,73 @@
         transform: translateX(-100%)
     to
         transform: translateX(0%)
+.leftTorightAnimation
+    animation-name: leftToright
+    animation-duration: 1s
+// ==============================================
+
+// ==============================================
 
 @keyframes rightToleft
     from
         transform: translatex(100%)
     to
         transform: translateX(0%)
+.rightToleftAnimation
+    animation-name: rightToleft
+    animation-duration: 1s
+// ==============================================
 
+// ==============================================
+@keyframes tTob
+    from
+        transform: translate(-50%,-200%)
+    to
+        transform: translate(-50%, -50%)
+
+.tTobanimation
+    animation-name: tTob
+    animation-duration: 1s
+@keyframes topTobottom
+    from
+        transform: translate(-50%,-200%)
+    to
+        transform: translate(-50%, -50%)
+.topTobottomAnimation
+    animation-name: topTobottom
+    animation-duration: 1s
+// ==============================================
+
+// ==============================================
+@keyframes sIo
+    0%
+        transform: translate(150%, -50%)
+        opacity: 0
+    50%
+        transform: translate(100%, -50%)
+        opacity: 0
+    100%
+        transform: translate(50%, -50%)
+        opacity: 1
+.sIoAnimation
+    animation-name: sIo
+    animation-duration: 2s
+
+@keyframes sliderImgOne
+    0%
+        transform: translate(150%, -50%)
+        opacity: 0
+    50%
+        transform: translate(100%, -50%)
+        opacity: 0
+    100%
+        transform: translate(50%, -50%)
+        opacity: 1
+.sliderImgOneAnimation
+    animation-name: sliderImgOne
+    animation-duration: 2s
+
+// ==============================================
 @keyframes bottomTotop
     from
         transform: translateY(200%)
@@ -20,4 +80,9 @@
     from
         transform: translateX(-600%) rotateZ(360deg)
     to
-        transform: translateX(0%) rotateZ(25deg)
+        transform: translateX(0%) rotateZ(0deg)
+@keyframes apearScale
+    from 
+        transform: scale(0) 
+    to
+        transform: scale(1) 

@@ -1,7 +1,9 @@
 .slider
     position: relative
     width: 100%
-    height: 50rem
+    height: 58rem
+    +respond(tab-land)
+        height: 50rem
     +respond(phone)
         height: 27rem
     &__img
@@ -17,60 +19,118 @@
 
 .insideImg
     &__text
-        position: absolute
-        width: 20%
-        top: 50%
-        left: 50%
-        transform: translate(-50%, -50%)
-        text-align: center
+        +slidertextparent
+        width: 35%
         &--icon
-            font-size: 5rem
-            color: $white
-            display: inline-block
-            transform: translateX(0%) rotateZ(25deg)
-            animation-name: rollToleftToright
-            animation-duration: 2s
+            +slidericon
         h2
-            font-family: $p-med
-            font-size: 4rem
-            color: $white
-            font-weight: lighter
-            transform: translateX(0%)
-            animation-name: leftToright
-            animation-duration: 2s 
-            letter-spacing: .5rem
+            +slidertexttitle
         p
-            font-family: $p-lig
-            font-size: 2rem
-            color: $white
-            font-weight: lighter
-            transform: translateX(0%)
-            animation-name: rightToleft
-            animation-duration: 2s 
-            letter-spacing: .3rem
+            +slidertextdesc
         a
-            font-family: $p-lig
-            font-size: 2rem
-            color: $white
-            text-decoration: none
-            font-style: italic
-            display: inline-block
-            padding: 1rem 2rem
-            border: .2rem solid $white
-            border-radius: 3rem
-            transform: translateY(0%)
-            animation-name: bottomTotop
-            animation-duration: 2s 
+            +sliderbutton
     &__img
         position: absolute
-        top: 0
-        right: 0
+        top: 50%
+        right: 23%
+        transform: translate(50%, -50%)
+        opacity: 1
+        width: 20%
+        +respond(tab-land)
+            right: 15%
+            width: 26%
+        +respond(phone)
+            display: none
+
+.insideImgtwo
+    &__text
+        +slidertextparent
+        width: 35%
+        // animation-name: topTobottom
+        // animation-duration: 1s
+        &--icon
+            +slidericon
+        h2
+            +slidertexttitle
+
+        p
+            +slidertextdesc
+
+        a
+            +sliderbutton
+
+    &__leftimg
+        position: absolute
+        top: 28%
+        left: 6%
+        opacity: 1
+        width: 31%
+        transform: translateX(0%)
+        +respond(tab-land)
+            top: 48%
+            left: 3%
+            width: 35%
+        +respond(tab-port)
+            left: 0%
+            width: 34%
+        +respond(phone)
+            display: none
+
+    &__rightimg
+        bottom: 0%
+        position: absolute
+        right: 18%
+        opacity: 1
+        width: 16%
+        height: 57%
+        transform: translateX(0%)
+        +respond(tab-land)
+            height: 50%
+        +respond(tab-port)
+            right: 13%
+            width: 18%
+        +respond(phone)
+            display: none
 
 
 
+.insideImgthree
+    &__text
+        +slidertextparent
+        width: 35%
+        +respond(tab-port)
+            width: 40%
+        &--icon
+            +slidericon
+        h2
+            +slidertexttitle
 
+        p
+            +slidertextdesc
+
+        a
+            +sliderbutton
+    &__rightimg
+        bottom: -4%
+        position: absolute
+        right: 29%
+        opacity: 1
+        width: 17%
+        transform: translateX(0%)
+        +respond(tab-land)
+            bottom: 0%
+            right: 25%
+        +respond(tab-port)
+            bottom: 10%
+            right: 21%
+        +respond(phone)
+            display: none
 
 
 #carousel
     width: 100%!important
     height: 100%!important
+aside[id="carousel-breadcrumbs"]
+    display: inline-block!important
+    transform: translateX(50%)!important
+    right: 50%!important
