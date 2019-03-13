@@ -11,8 +11,7 @@ slidr.create('carousel', {
     pause: true,
     transition: 'linear'
   }).add('h', ['one', 'two', 'three', 'one'])
-  .start();
-  // .auto(4000)
+  .start().auto(4000);
 function number(picid){
   let divone = document.querySelector(".insideImg__text");
   let divoneimg = document.querySelector(".insideImg__img")
