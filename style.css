@@ -1583,16 +1583,16 @@ main {
 }
 @media only screen and (max-width: 93.75em) {
   .insideImgtwo__rightimg {
-    right: 12%;
-    width: 17%;
+    right: 14%;
+    width: 14%;
     height: 47%;
   }
 }
 @media only screen and (max-width: 75em) {
   .insideImgtwo__rightimg {
     height: 42%;
-    right: 11%;
-    width: 15%;
+    right: 18%;
+    width: 12%;
   }
 }
 @media only screen and (max-width: 56.25em) {
