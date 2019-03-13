@@ -1162,19 +1162,34 @@ main {
   width: 100%;
   height: 58rem;
 }
+@media only screen and (min-width: 112.5em) {
+  .slider {
+    height: 64rem;
+  }
+}
+@media only screen and (max-width: 112.4em) {
+  .slider {
+    height: 57rem;
+  }
+}
+@media only screen and (max-width: 93.75em) {
+  .slider {
+    height: 44.7rem;
+  }
+}
 @media only screen and (max-width: 75em) {
   .slider {
-    height: 40rem;
+    height: 34.7rem;
   }
 }
 @media only screen and (max-width: 56.25em) {
   .slider {
-    height: 30rem;
+    height: 26rem;
   }
 }
 @media only screen and (max-width: 37.5em) {
   .slider {
-    height: 27rem;
+    height: 25.5rem;
   }
 }
 .slider__img {
@@ -1184,7 +1199,7 @@ main {
 }
 @media only screen and (max-width: 37.5em) {
   .slider__img {
-    height: 27rem;
+    height: 100%;
   }
 }
 .slider__img img {
@@ -1217,7 +1232,7 @@ main {
 }
 @media only screen and (max-width: 93.75em) {
   .insideImg__text {
-    width: 40%;
+    width: 45%;
   }
 }
 @media only screen and (max-width: 75em) {
@@ -1235,6 +1250,11 @@ main {
   transform: translateX(0%) rotateZ(0deg);
   margin-bottom: 1rem;
 }
+@media only screen and (max-width: 75em) {
+  .insideImg__text--icon {
+    margin-bottom: 0.5rem;
+  }
+}
 @media only screen and (max-width: 37.5em) {
   .insideImg__text--icon {
     width: 15%;
@@ -1251,6 +1271,7 @@ main {
 @media only screen and (max-width: 75em) {
   .insideImg__text h2 {
     font-size: 3.1rem;
+    margin-bottom: 1rem;
   }
 }
 @media only screen and (max-width: 56.25em) {
@@ -1276,7 +1297,7 @@ main {
 @media only screen and (max-width: 75em) {
   .insideImg__text p {
     font-size: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0.8rem;
   }
 }
 @media only screen and (max-width: 56.25em) {
@@ -1382,7 +1403,7 @@ main {
 }
 @media only screen and (max-width: 93.75em) {
   .insideImgtwo__text {
-    width: 50%;
+    width: 55%;
   }
 }
 @media only screen and (max-width: 75em) {
@@ -1400,6 +1421,11 @@ main {
   transform: translateX(0%) rotateZ(0deg);
   margin-bottom: 1rem;
 }
+@media only screen and (max-width: 75em) {
+  .insideImgtwo__text--icon {
+    margin-bottom: 0.5rem;
+  }
+}
 @media only screen and (max-width: 37.5em) {
   .insideImgtwo__text--icon {
     width: 15%;
@@ -1416,6 +1442,7 @@ main {
 @media only screen and (max-width: 75em) {
   .insideImgtwo__text h2 {
     font-size: 3.1rem;
+    margin-bottom: 1rem;
   }
 }
 @media only screen and (max-width: 56.25em) {
@@ -1441,7 +1468,7 @@ main {
 @media only screen and (max-width: 75em) {
   .insideImgtwo__text p {
     font-size: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0.8rem;
   }
 }
 @media only screen and (max-width: 56.25em) {
@@ -1509,14 +1536,14 @@ main {
 }
 @media only screen and (max-width: 93.75em) {
   .insideImgtwo__leftimg {
-    top: 46%;
+    top: 38%;
     left: 1%;
-    width: 28%;
+    width: 26%;
   }
 }
 @media only screen and (max-width: 75em) {
   .insideImgtwo__leftimg {
-    top: 49%;
+    top: 43%;
     left: 3%;
     width: 23%;
   }
@@ -1556,7 +1583,7 @@ main {
 }
 @media only screen and (max-width: 93.75em) {
   .insideImgtwo__rightimg {
-    right: 10%;
+    right: 12%;
     width: 17%;
     height: 47%;
   }
@@ -1622,6 +1649,11 @@ main {
   transform: translateX(0%) rotateZ(0deg);
   margin-bottom: 1rem;
 }
+@media only screen and (max-width: 75em) {
+  .insideImgthree__text--icon {
+    margin-bottom: 0.5rem;
+  }
+}
 @media only screen and (max-width: 37.5em) {
   .insideImgthree__text--icon {
     width: 15%;
@@ -1638,6 +1670,7 @@ main {
 @media only screen and (max-width: 75em) {
   .insideImgthree__text h2 {
     font-size: 3.1rem;
+    margin-bottom: 1rem;
   }
 }
 @media only screen and (max-width: 56.25em) {
@@ -1663,7 +1696,7 @@ main {
 @media only screen and (max-width: 75em) {
   .insideImgthree__text p {
     font-size: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0.8rem;
   }
 }
 @media only screen and (max-width: 56.25em) {
@@ -1719,7 +1752,7 @@ main {
   .insideImgthree__rightimg {
     width: 30.3rem;
     right: 30%;
-    bottom: -1%;
+    bottom: 3%;
   }
 }
 @media only screen and (max-width: 112.4em) {
@@ -1732,15 +1765,15 @@ main {
 @media only screen and (max-width: 93.75em) {
   .insideImgthree__rightimg {
     bottom: -2%;
-    right: 19%;
-    width: 24.5%;
+    right: 22%;
+    width: 18.4%;
   }
 }
 @media only screen and (max-width: 75em) {
   .insideImgthree__rightimg {
     bottom: -4.5%;
     right: 21%;
-    width: 21.5%;
+    width: 18%;
   }
 }
 @media only screen and (max-width: 56.25em) {
