@@ -3,7 +3,9 @@
     width: 100%
     height: 58rem
     +respond(tab-land)
-        height: 50rem
+        height: 40rem
+    +respond(tab-port)
+        height: 30rem
     +respond(phone)
         height: 27rem
     &__img
@@ -21,6 +23,16 @@
     &__text
         +slidertextparent
         width: 35%
+        +respond(big-desktop)
+            width: 28%
+        +respond(med-desktop)
+            width: 35%
+        +respond(desktop)
+            width: 40%
+        +respond(tab-land)
+            width: 45%
+        +respond(tab-port)
+            width: 80%
         &--icon
             +slidericon
         h2
@@ -36,9 +48,17 @@
         transform: translate(50%, -50%)
         opacity: 1
         width: 20%
+        +respond(big-desktop)
+            right: 24%
+            width: 37rem
+        +respond(desktop)
+            right: 15%
+            width: 23%
         +respond(tab-land)
             right: 15%
             width: 26%
+        +respond(tab-port)
+            display: none
         +respond(phone)
             display: none
 
@@ -46,8 +66,16 @@
     &__text
         +slidertextparent
         width: 35%
-        // animation-name: topTobottom
-        // animation-duration: 1s
+        +respond(big-desktop)
+            width: 38%
+        +respond(med-desktop)
+            width: 45%
+        +respond(desktop)
+            width: 50%
+        +respond(tab-land)
+            width: 52%
+        +respond(tab-port)
+            width: 80%
         &--icon
             +slidericon
         h2
@@ -66,13 +94,24 @@
         opacity: 1
         width: 31%
         transform: translateX(0%)
+        +respond(big-desktop)
+            top: 34%
+            left: 9%
+            width: 49.5rem
+        +respond(med-desktop)
+            top: 33%
+            left: 2%
+            width: 29%
+        +respond(desktop)
+            top: 46%
+            left: 1%
+            width: 28%
         +respond(tab-land)
-            top: 48%
+            top: 49%
             left: 3%
-            width: 35%
+            width: 23%
         +respond(tab-port)
-            left: 0%
-            width: 34%
+            display: none
         +respond(phone)
             display: none
 
@@ -84,22 +123,41 @@
         width: 16%
         height: 57%
         transform: translateX(0%)
+        +respond(big-desktop)
+            right: 20%
+            width: 16%
+            height: 48.5%
+        +respond(med-desktop)
+            right: 17%
+            width: 15%
+            height: 49.5%
+        +respond(desktop)
+            right: 10%
+            width: 17%
+            height: 47%
         +respond(tab-land)
-            height: 50%
+            height: 42%
+            right: 11%
+            width: 15%
         +respond(tab-port)
-            right: 13%
-            width: 18%
+            display: none
         +respond(phone)
             display: none
-
-
 
 .insideImgthree
     &__text
         +slidertextparent
         width: 35%
+        +respond(big-desktop)
+            width: 37%
+        +respond(med-desktop)
+            width: 44%
+        +respond(desktop)
+            width: 55%
+        +respond(tab-land)
+            width: 56%
         +respond(tab-port)
-            width: 40%
+            width: 80%
         &--icon
             +slidericon
         h2
@@ -117,12 +175,24 @@
         opacity: 1
         width: 17%
         transform: translateX(0%)
+        +respond(big-desktop)
+            width: 30.3rem
+            right: 30%
+            bottom: -1%
+        +respond(med-desktop)
+            bottom: 1%
+            right: 26%
+            width: 18.6%
+        +respond(desktop)
+            bottom: -2%
+            right: 19%
+            width: 24.5%
         +respond(tab-land)
-            bottom: 0%
-            right: 25%
-        +respond(tab-port)
-            bottom: 10%
+            bottom: -4.5%
             right: 21%
+            width: 21.5%
+        +respond(tab-port)
+            display: none
         +respond(phone)
             display: none
 
