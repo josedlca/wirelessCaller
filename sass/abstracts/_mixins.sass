@@ -45,7 +45,6 @@
 
 =slidericon
     display: inline-block
-    transform: translateX(0%) rotateZ(0deg)
     margin-bottom: 1rem
     +respond(tab-land)
         margin-bottom: .5rem
@@ -76,8 +75,10 @@
     color: $white
     font-weight: lighter
     letter-spacing: .3rem
+    +respond(desktop)
+        margin-bottom: 2rem
     +respond(tab-land)
-        font-size: 2rem
+        font-size: 1rem
         margin-bottom: .8rem
     +respond(tab-port)
         font-size: 2rem

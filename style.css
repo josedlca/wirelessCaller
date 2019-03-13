@@ -321,30 +321,6 @@ main {
   animation-duration: 2s;
 }
 
-@keyframes bottomTotop {
-  from {
-    transform: translateY(200%);
-  }
-  to {
-    transform: translateY(0%);
-  }
-}
-@keyframes rollToleftToright {
-  from {
-    transform: translateX(-600%) rotateZ(360deg);
-  }
-  to {
-    transform: translateX(0%) rotateZ(0deg);
-  }
-}
-@keyframes apearScale {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-  }
-}
 .header {
   border-bottom: 1px solid #ddd;
   position: sticky;
@@ -1247,7 +1223,6 @@ main {
 }
 .insideImg__text--icon {
   display: inline-block;
-  transform: translateX(0%) rotateZ(0deg);
   margin-bottom: 1rem;
 }
 @media only screen and (max-width: 75em) {
@@ -1294,9 +1269,14 @@ main {
   font-weight: lighter;
   letter-spacing: 0.3rem;
 }
+@media only screen and (max-width: 93.75em) {
+  .insideImg__text p {
+    margin-bottom: 2rem;
+  }
+}
 @media only screen and (max-width: 75em) {
   .insideImg__text p {
-    font-size: 2rem;
+    font-size: 1rem;
     margin-bottom: 0.8rem;
   }
 }
@@ -1418,7 +1398,6 @@ main {
 }
 .insideImgtwo__text--icon {
   display: inline-block;
-  transform: translateX(0%) rotateZ(0deg);
   margin-bottom: 1rem;
 }
 @media only screen and (max-width: 75em) {
@@ -1465,9 +1444,14 @@ main {
   font-weight: lighter;
   letter-spacing: 0.3rem;
 }
+@media only screen and (max-width: 93.75em) {
+  .insideImgtwo__text p {
+    margin-bottom: 2rem;
+  }
+}
 @media only screen and (max-width: 75em) {
   .insideImgtwo__text p {
-    font-size: 2rem;
+    font-size: 1rem;
     margin-bottom: 0.8rem;
   }
 }
@@ -1646,7 +1630,6 @@ main {
 }
 .insideImgthree__text--icon {
   display: inline-block;
-  transform: translateX(0%) rotateZ(0deg);
   margin-bottom: 1rem;
 }
 @media only screen and (max-width: 75em) {
@@ -1693,9 +1676,14 @@ main {
   font-weight: lighter;
   letter-spacing: 0.3rem;
 }
+@media only screen and (max-width: 93.75em) {
+  .insideImgthree__text p {
+    margin-bottom: 2rem;
+  }
+}
 @media only screen and (max-width: 75em) {
   .insideImgthree__text p {
-    font-size: 2rem;
+    font-size: 1rem;
     margin-bottom: 0.8rem;
   }
 }
